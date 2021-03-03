@@ -35,7 +35,10 @@ const Wrapper = styled.div`
   margin: 1em;
   hr{
       border:1px solid var(--text);
-      margin-top:1em;
+      margin-top:1.4em;
+  }
+  h1{
+      @media (max-width: 320px){ font-size: 1.2rem;}
   }
 `;
 
@@ -66,6 +69,8 @@ position:relative;
       background:var(--button-hover);
       animation-duration:0s;
   }
+  @media (max-width: 733px){ font-size: 2.5rem;}
+  @media (max-width: 320px){ font-size: 1.4rem;}
 `;
 
 

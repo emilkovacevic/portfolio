@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import {BrowserRouter as Router} from 'react-router-dom'
 import './global.css'
 
+import SiteMap from './components/SiteMap'
 import Home from './components/Home'
 import SlideControler from './slides/SlideControler'
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <AppContainer> 
+        <SiteMap />
         <Navbar name='Emil Kovacevic' handleClick={handleClick} isVisible={isVisible} />
         {
           areSliders ?
@@ -31,7 +33,6 @@ function App() {
           :
           <Home toggleSliders={toggleSliders}></Home>
         }
-
       </AppContainer>
     </Router>
   );
