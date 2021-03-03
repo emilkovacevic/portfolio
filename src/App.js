@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState}  from 'react'
+import styled from 'styled-components'
+import Navbar from './components/Navbar'
+import {BrowserRouter as Router} from 'react-router-dom'
+import './global.css'
+
+import Home from './components/Home'
+import SlideControler from './slides/SlideControler'
+
+const AppContainer = styled.div``
 
 function App() {
+  // NAVBAR STATE
+  const [isVisible, setVisible] = useState(false)
+  const handleClick = () =>{
+    setVisible(!isVisible)
+  }
+  // Slides State
+  const [areSliders, setSliders] = useState(false)
+  const toggleSliders = () =>{
+    setSliders(!areSliders)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AppContainer> 
+        <Navbar name='Emil Kovacevic' handleClick={handleClick} isVisible={isVisible} />
+        {
+          areSliders ?
+          <SlideControler/>
+          :
+          <Home toggleSliders={toggleSliders}></Home>
+        }
+
+      </AppContainer>
+    </Router>
   );
 }
 
