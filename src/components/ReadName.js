@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState } from "react";
 import styled from 'styled-components'
 import useSound from 'use-sound';
 import mysound from '../data/mysound.mp3'
@@ -9,26 +9,30 @@ const Button = styled.button`
     border:none;
     font-size:unset;
     cursor: pointer;
+    outline:none;
+    color:var(--button);
+    :hover{color: var(--button-hover)}
+    position:relative;
+    top: 5px;
 `
 
 function ReadName() {
 
     const [sound, setSound] = useState(false)
 
-
-     const [play, { stop }] = useSound(
+    const [play] = useSound(
         mysound,
-        { volume: 0.5 }
+        { volume: 0.8 }
     );
-  
-    return (
 
-            <Button onClick={play}>
-            <span>
-            {sound ? <i className="fas fa-volume-up"></i>
-            :
-            <i className="fas fa-volume-mute"></i> }
-            </span>
+    return (
+        <Button onClick={()=>{
+            setSound(!sound);
+            play();
+            }} >
+                <span>
+                <i className="fas fa-volume-up"></i>
+                </span>
             </Button>
 
     )

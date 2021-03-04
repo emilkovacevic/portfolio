@@ -13,8 +13,8 @@ const ToggleButton = styled.div`
     z-index:999;
     font-size:2rem;
     position:fixed;
-    right:1em;
     top:1.5rem;
+    right:1.5rem;
     cursor:pointer;
     color: var(--button);
     :hover{
@@ -31,7 +31,7 @@ const NavItems = styled.div`
    grid-template-columns: 1fr 1fr;
    align-items: center;
    position: absolute;
-   transition: .3s ease-in;
+   transition: var(--menuTransitions) ease-in;
    opacity:${({isVisible})=>(isVisible ? '1' : '0')};
    top: ${({isVisible})=>(isVisible ? '0' : '-100vh')};
    a{

@@ -1,32 +1,40 @@
 import React from 'react'
 import {Link, Route} from 'react-router-dom'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
 const MapLink = styled(Link)`
-    z-index:999;
+    z-index:99;
     font-size:2rem;
-    position:fixed;
-    left:1em;
-    top:1.5rem;
     cursor:pointer;
     color: var(--button);
     border:none;
     background: transparent;
+    position:fixed;
+    top:1.5rem;
+    left:1.5rem;
     :hover{
     color: var(--button-hover);
+    }
 }
 `
+
+const mountAnimation = keyframes`
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+`
+
 const SiteMapContainer = styled.div`
     position:absolute;
     z-index: 999;
     height:100%;
     width: 100%;
     background: var(--background);
+    animation: ${mountAnimation} var(--menuTransitions) ease-out;
 `
 const GoHome = styled(Link)`
     position: absolute;
-    right: 2rem;
-    top: 1rem;
+    top:1.5rem;
+    left:1.5rem;
     font-size: 2rem;
     color: var(--button);
     :hover{

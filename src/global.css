@@ -1,9 +1,11 @@
 :root{
-    --links: #413c69;
-    --background: #709fb0;
-    --text: #4a47a3;
-    --button: #a7c5eb;
+    --background: #def2f1;
+    --heading: #2b7a7b;
+    --button: #3aafa9;
+    --text: #17252A;
+    --links: #3aafa9;
     
-    
-    --button-hover: #879fbd;
+    --button-hover: #7c7c7c;
+
+    --menuTransitions: 0.4s;
 }

@@ -17,6 +17,7 @@ const Tags = styled.div`
         font-size: 14rem;
         position:relative;
         bottom:4rem;
+        color:var(--button)
     }
     :before{
         content:'{';
@@ -36,6 +37,7 @@ const Wrapper = styled.div`
   hr{
       border:1px solid var(--text);
       margin-top:1.4em;
+      color:(--text);
   }
   h1{
       @media (max-width: 320px){ font-size: 1.2rem;}
@@ -63,11 +65,16 @@ position:relative;
   color: var(--text);
   background:var(--button);
   border:none;
+  border-radius: 10px;
+  padding: 0 15px;
   outline:none;
   animation: ${shake} 5s infinite;
+  transition: 0.4s;
   :hover{
-      background:var(--button-hover);
-      animation-duration:0s;
+      animation: unset;
+      background:var(--background);
+      color:var(--heading);
+      transform: translateX(0px);
   }
   @media (max-width: 733px){ font-size: 2.5rem;}
   @media (max-width: 320px){ font-size: 1.4rem;}
