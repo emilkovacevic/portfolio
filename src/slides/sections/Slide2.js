@@ -7,6 +7,7 @@ const Heading = styled(motion.p)`
     color:var(--heading);
     font-size: 3rem;
     margin: 1em;
+    text-align:center;
 `
 
 function Slide2() {

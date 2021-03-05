@@ -1,104 +1,80 @@
 import React from 'react'
-import {Link, Route} from 'react-router-dom'
-import styled, {keyframes} from 'styled-components'
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
-const MapLink = styled(Link)`
-    z-index:99;
-    font-size:2rem;
-    cursor:pointer;
-    color: var(--button);
-    border:none;
-    background: transparent;
-    position:fixed;
-    top:1.5rem;
-    left:1.5rem;
-    :hover{
-    color: var(--button-hover);
-    }
+
+const Map = styled.div`
+position: absolute;
+left: 0;
+display: flex;
+flex-wrap: wrap;
+position: absolute;
+z-index: 99;
+`
+const ToggleButton = styled.div`
+z-index: 999;
+position: fixed;
+font-size: 2rem;
+top: 1.5rem;
+left: 1.5rem;
+cursor: pointer;
+color: var(--button);
+:hover {
+  color: var(--button-hover);
+}
+@media (max-width: 320px) {
+  width: 10%;
 }
 `
 
-const mountAnimation = keyframes`
-    from{transform:scale(0)}
-    to{transform:scale(1)}
-`
 
-const SiteMapContainer = styled.div`
-    position:absolute;
-    z-index: 999;
-    height:100%;
-    width: 100%;
-    background: var(--background);
-    animation: ${mountAnimation} var(--menuTransitions) ease-out;
-`
-const GoHome = styled(Link)`
-    position: absolute;
-    top:1.5rem;
-    left:1.5rem;
-    font-size: 2rem;
-    color: var(--button);
-    :hover{
-        color: var(--button-hover);
-        }
-`
+const MapItems = styled.div`
+   background: var(--background); 
+   min-width:100vw;
+   min-height:100vh;
+   position: absolute;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   transition: var(--menuTransitions) ease-in;
+   opacity:${({isMap})=>(isMap ? '1' : '0')};
+   top: ${({isMap})=>(isMap ? '0' : '-100vh')};
+   a{
+       color: var(--text);
+       text-decoration:none;
+   }
+   a:hover{
+       text-decoration:underline;
+   }
+   @media (max-width: 480px){
+    grid-template-columns: 1fr; 
+    min-height:100%;
+    text-align: center;
+   }
 
-const Wrapper = styled.div`
-    height:100vh;
+`
+const NavLink = styled(Link)`
     display:flex;
-    flex-direction: column;
     justify-content:center;
-    align-items: center;
-    h2{
-        font-size: 3rem;
-        color: var(--text);
-    }
-    div{
-        margin: 4em auto;
-        display:flex;
-        flex-wrap:wrap;
-        @media(max-width: 480px){
-            justify-content:center;
-        }
-    }
-    div a{
-        margin: 1em;
-        padding: 1em;
-        border: 1px solid var(--text);
-        border-radius: 0.5em;
-        color: var(--text);
-        text-decoration:none;
-        text-transform: uppercase;
-        font-weight:600;
-        :hover{ background: var(--button-hover);}
-
-    }
+    align-items:center;
+    margin:2em auto;
+    text-align:center;
+    font-size:1.5rem;
 `
 
-function SiteMap() {
+function SiteMap({handleClick, isMap}) {
     return (
-<>
-    <MapLink to='/sitemap' >
-        <i className="fas fa-map-signs"></i>
-    </MapLink>
-    <Route path='/sitemap' component={()=>{
-            return(
-                <SiteMapContainer>
-                    <GoHome to='/'><i className="fas fa-home"></i></GoHome>
-                    <Wrapper>
-                        <h2>SiteMap</h2>
-                        <div>
-                            <Link to='/about'>About</Link>
-                            <Link to='/projects'>Projects</Link>
-                            <Link to='/contact'>Contact</Link>
-                        </div>
-                    </Wrapper>
-                </SiteMapContainer>
-            )
-        }
-        }
-     />
-</>
+        <Map>
+            <ToggleButton onClick={handleClick}><span>{isMap ? <i className="fas fa-home"></i> : <i class="fas fa-map-signs"></i>}</span></ToggleButton>
+            <MapItems isMap={isMap}>
+                <NavLink onClick={handleClick} to='/'>HomePage</NavLink>
+                <NavLink onClick={handleClick} to='/projects'>Projects</NavLink>
+                <NavLink onClick={handleClick} to='/about'>About me</NavLink>
+                <NavLink onClick={handleClick} to='/cv'>CV</NavLink>
+            </MapItems>
+        </Map>
     )
 }
 
 export default SiteMap
+

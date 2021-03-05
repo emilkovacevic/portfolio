@@ -1,38 +1,45 @@
 import React, {useState}  from 'react'
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './global.css'
 
 import SiteMap from './components/SiteMap'
-import Home from './components/Home'
-import SlideControler from './slides/SlideControler'
+import About from './components/about/About'
+import My404Component from './components/My404Component'
+import LandingPage from './components/LandingPage'
+import Projects from './components/projects/Projects'
 
-const AppContainer = styled.div``
+const AppContainer = styled.div`
+  margin:auto;
+`
 
 function App() {
-  // NAVBAR STATE
+  // NAVBAR STATE FOR TOGGLE MENU
   const [isVisible, setVisible] = useState(false)
   const handleClick = () =>{
     setVisible(!isVisible)
+    setMap(false)
   }
-  // Slides State
-  const [areSliders, setSliders] = useState(false)
-  const toggleSliders = () =>{
-    setSliders(!areSliders)
+
+  // SITEMAP STATE
+  const [isMap, setMap] = useState(false)
+  const handleClickMap = () =>{
+    setMap(!isMap)
+    setVisible(false)
   }
 
   return (
     <Router>
       <AppContainer> 
-        <SiteMap />
-        <Navbar name='Emil Kovacevic' handleClick={handleClick} isVisible={isVisible} />
-        {
-          areSliders ?
-          <SlideControler/>
-          :
-          <Home toggleSliders={toggleSliders}></Home>
-        }
+      <SiteMap handleClick={handleClickMap} isMap={isMap}/>
+      <Navbar name='Emil Kovačević' handleClick={handleClick} isVisible={isVisible} />
+        <Switch>
+            <Route exact path='/' component={LandingPage}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path='/projects' component={Projects}/>
+            <Route path='*' exact={true} component={My404Component} />
+        </Switch>
       </AppContainer>
     </Router>
   );

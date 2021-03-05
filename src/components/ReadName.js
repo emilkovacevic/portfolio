@@ -10,10 +10,10 @@ const Button = styled.button`
     font-size:unset;
     cursor: pointer;
     outline:none;
-    color:var(--button);
+    color:var(--heading);
     :hover{color: var(--button-hover)}
     position:relative;
-    top: 5px;
+    top: 2px;
 `
 
 function ReadName() {
@@ -22,7 +22,7 @@ function ReadName() {
 
     const [play] = useSound(
         mysound,
-        { volume: 0.8 }
+        { volume: 50}
     );
 
     return (
