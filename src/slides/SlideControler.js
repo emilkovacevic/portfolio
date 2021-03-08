@@ -25,7 +25,7 @@ function SlideControler() {
                 if(scrollPosition > 0 && section < 5) { setSection(section  + 1)}
                 else if(scrollPosition < 0 && section > 1) { setSection(section - 1)}
                 //console.log(`scrollPosition: ${scrollPosition} , section: ${section}`)
-            }, 1500);
+            }, 500);
         }
 
         window.addEventListener('mousewheel', scrollHandler)

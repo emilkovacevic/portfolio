@@ -12,7 +12,7 @@ position: absolute;
 z-index: 99;
 `
 const ToggleButton = styled.div`
-z-index: 999;
+z-index: 99;
 position: fixed;
 font-size: 2rem;
 top: 1.5rem;
@@ -32,7 +32,7 @@ const MapItems = styled.div`
    background: var(--background); 
    min-width:100vw;
    min-height:100vh;
-   position: absolute;
+   position: fixed;
    display:flex;
    flex-direction:column;
    justify-content:center;
@@ -65,12 +65,11 @@ const NavLink = styled(Link)`
 function SiteMap({handleClick, isMap}) {
     return (
         <Map>
-            <ToggleButton onClick={handleClick}><span>{isMap ? <i className="fas fa-home"></i> : <i class="fas fa-map-signs"></i>}</span></ToggleButton>
+            <ToggleButton onClick={handleClick}><span>{isMap ? <i className="fas fa-home"></i> : <i className="fas fa-map-signs"></i>}</span></ToggleButton>
             <MapItems isMap={isMap}>
                 <NavLink onClick={handleClick} to='/'>HomePage</NavLink>
                 <NavLink onClick={handleClick} to='/projects'>Projects</NavLink>
                 <NavLink onClick={handleClick} to='/about'>About me</NavLink>
-                <NavLink onClick={handleClick} to='/cv'>CV</NavLink>
             </MapItems>
         </Map>
     )

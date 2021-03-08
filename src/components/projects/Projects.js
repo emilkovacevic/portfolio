@@ -3,68 +3,95 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { projects } from "../../data/data";
 
+
+const Component = styled.section`
+position: static;
+background: var(--background);
+padding: 6rem 0 3em 0;
+margin:0;
+min-height:100vh;
+`
+
 const Container = styled(motion.div)`
-  min-height: 100vh;
-  padding-top: 5rem;
-  background: var(--background);
-  h2 {
-    max-width: var(--app-max-width);
-    margin: 1em auto;
-    padding-bottom: 0.5em;
-    font-size: 1.2rem;
+  position: static;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  max-width:1200px;
+  margin:1em auto;
+  h2{
+    margin: 1rem 1em;
   }
-  div {
-      max-width: 800px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      border-radius:8px;
-      div {
-      background:var(--card-background);  
-      display: flex;
-      flex-flow: column wrap;
-      margin: 1em;
-      padding: 1em;
-      box-shadow: 2px 3px 10px 2px var(--projects-border);
-      a {
-        text-decoration: none;
-        img {
-          object-fit: center;
-          width:100%;
-          height:100%;
-          border-radius:8px;
-        }
-      }
+`;
+
+const Cards = styled.div`
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 1em;
+  margin: 2em 1em;
+`
+const Card = styled(motion.div)`
+  background: var(--card-links__border);
+  cursor:pointer;
+  box-shadow: '3px 5px 4px 4px black';
+  img{
+    width:100%;
+    max-height:300px;
+    object-fit:cover;
+    :hover, :focus{
+      -webkit-filter: brightness(80%);
+      -webkit-transition: all 0.5s ease;
+    }
+  }
+`
+const Links = styled(motion.div)`
+  margin:1em;
+  h3{
+    font-size:1.9rem;
+    text-align:center;
+  }
+  span{
+    margin: 1em 0;
+    display:flex;
+    justify-content: space-evenly;
+    a{
+      color: var(--link);
+      font-size:1.4rem;
+      text-decoration:none;
+      :hover{ color: var(--button-hover)}
     }
   }
 `;
 
-const Links = styled.div`
-  box-shadow:none !important;
-  background: var(--card-links__border);
-`
-
 function Slide3() {
   return (
-    <Container>
-      <h2>Projects</h2>
-      <div>
-        {projects.map((project, index) => {
-          return (
-            <div key={index}>
-              <a href={project.link}>
-                <img src={project.image.link} alt={project.image.alt} />
-              </a>
-              <h2>{project.name}</h2>
-              <Links>
-                <a href={project.link}>{project.link}</a>
-                <a href={project.link}>{project.link}</a>
-              </Links>
-            </div>
-          );
-        })}
-      </div>
-    </Container>
+    <Component>
+      <Container>
+        <h2>Projects I Worked On</h2>
+        <Cards>
+          {projects.map((project, index) => {
+            return (
+              <Card key={index}
+              whileHover={{
+                boxShadow: '3px 3px 14px var(--text)'
+              }}
+              >
+                <a href={project.link}>
+                  <img src={project.image.link} alt={project.image.alt} />
+                </a>
+                <Links>
+                  <h3>{project.name}</h3>
+                  <span>
+                    <a href={project.LiveLink}>Demo: <i className="fas fa-cog"></i></a>
+                    <a href={project.gitLink}>Code: <i className="fab fa-github-square"></i></a>
+                  </span>
+                </Links>
+              </Card>
+            );
+          })}
+        </Cards>
+      </Container>
+    </Component>
   );
 }
 

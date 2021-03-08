@@ -1,4 +1,6 @@
 import React from 'react'
+import Contact from '../../components/contact/Contact'
+
 
 function Slide5() {
     return (
@@ -8,6 +10,7 @@ function Slide5() {
                 Something went wrong! <br />
                 Contact Me Below
             </p>
+            <Contact />
         </div>
     )
 }
