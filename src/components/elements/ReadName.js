@@ -1,7 +1,7 @@
-import React, {useState } from "react";
+import React from "react";
 import styled from 'styled-components'
 import useSound from 'use-sound';
-import mysound from '../data/mysound.mp3'
+import mysound from '../../data/mysound.mp3'
 
 const Button = styled.button`
     background:unset;
@@ -17,18 +17,13 @@ const Button = styled.button`
 
 function ReadName() {
 
-    const [sound, setSound] = useState(false)
-
-    const [play, {stop}] = useSound(
+    const [play] = useSound(
         mysound,
         { volume: 1}
     );
 
     const onClickPlay = () =>{
-        setSound(!sound)
-        if(sound){
             play()
-        }else{stop()}
     }
 
     return (

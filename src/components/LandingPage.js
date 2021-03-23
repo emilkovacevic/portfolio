@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import SlideControler from '../slides/SlideControler'
-import Home from '../components/Home'
+import Home from './home/Home'
 function LandingPage() {
       // Slides State
   const [areSliders, setSliders] = useState(false)

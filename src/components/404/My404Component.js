@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import img404 from '../data/404.png'
+import img404 from '../../data/404.png'
 
 const Component = styled.div`
     background: var(--background);

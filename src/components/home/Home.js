@@ -3,6 +3,8 @@ import styled, {keyframes} from "styled-components";
 
 const HomePage = styled.div`
   background: var(--background);
+  position:relative;
+  z-index:0;
   color: var(--text);
   display: flex;
   flex-wrap:wrap;
@@ -11,19 +13,20 @@ const HomePage = styled.div`
   height: 100vh;
   overflow:hidden;
 `;
+
 const Tags = styled.div`
     display:flex;
     :before,:after{
         font-size: 14rem;
         position:relative;
-        bottom:5rem;
+        bottom:2rem;
         color:var(--button)
     }
     :before{
-        content:'{';
+        content:'[{';
     }
     :after{
-    content:'/}';
+    content:'}]';
     }
     @media (max-width: 600px){
         :before, :after{
@@ -33,7 +36,7 @@ const Tags = styled.div`
 `
 const Wrapper = styled.div`
   line-height: 1.4;
-  margin: 0 1em;
+  margin: auto 1em;
   hr{
       border:1px solid var(--text);
       margin-top:1.4em;
@@ -50,7 +53,7 @@ const shake = keyframes`
   transform: translateX(0);
 }
 50%{
-  transform: translateX(1em);
+  transform: translateX(10%);
 }
 100%{
   transform: translateX(0);
@@ -81,7 +84,6 @@ position:relative;
   @media (max-width: 320px){ font-size: 1.4rem;}
 `;
 
-
 function Home({toggleSliders}) {
   return (
     <HomePage>
@@ -89,7 +91,7 @@ function Home({toggleSliders}) {
         <Wrapper>
             <h1>Wellcome to an animated web developers portfolio</h1>
             <hr></hr>
-            <Button onClick={toggleSliders}>Click Me To Enter</Button>
+            <Button onClick={toggleSliders}>Click Me To Continue</Button>
         </Wrapper>
       </Tags>  
     </HomePage>

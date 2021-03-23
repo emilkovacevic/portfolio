@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { personal } from "../data/data";
+import { personal } from "../../data/data";
 
 const Nav = styled.nav`
   position: absolute;

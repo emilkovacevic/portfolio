@@ -21,6 +21,7 @@ cursor: pointer;
 color: var(--button);
 :hover {
   color: var(--button-hover);
+  text-shadow: 0px 1px 1px var(--text);
 }
 @media (max-width: 320px) {
   width: 10%;

@@ -8,7 +8,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HOT FIX!! NAV TRANSITION ON SCROLL */
+.navbar{
+  background-color: var(--background);
+  position:fixed;
+  top: 0;
+  z-index: 995;
+  width: 100%;
+}
+.nav-btn__colors{
+  background: #def2f1 !important;
+  box-shadow: 0px 2px 3px var(--text);
+  padding-bottom: 1em;
+}
+.nav-btn__colors i{
+  color:24343a !important;
 }

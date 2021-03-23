@@ -14,23 +14,6 @@
     /* PROJECTS PAGE */
     --projects-border: #24343a;
     --projects-text: #24343a;
-    --card-background: whitesmoke;
+    --card-background: #def2f1;
     --card-links__border: rgb(255, 255, 255);
-}
-
-html, body{
-    margin:0 !important;
-}
-/* HOT FIX!! NAV TRANSITION ON SCROLL */
-.nav-btn__colors{
-    z-index: 995;
-    background: #def2f1 !important;
-    box-shadow: 0px 2px 3px var(--text);
-    position: fixed;
-    width: 100vw;
-    height:90px;
-    top:0;
-}
-.nav-btn__colors i{
-    color:24343a !important;
 }
