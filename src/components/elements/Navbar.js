@@ -123,12 +123,13 @@ const Description = styled.span`
   border-top: 1px solid var(--text);
   padding-top: 0.5em;
   color: var(--text);
+  word-break: break-word;
   @media (max-width: 680px) {
     border-top: none;
     display:block;
     margin: 0.5em 2rem;
     padding: 0;
-    text-align:left;
+    text-align:center;
   }
 `;
 const HorizontalBreak = styled.hr`
@@ -151,9 +152,7 @@ function Navbar({ name, handleClick, isVisible }) {
       <NavItems isVisible={isVisible}>
         <Name>
           <NavLink to="/">
-
               <h4 onClick={handleClick}>{name}</h4>
-
           </NavLink>
           <Description> web developer portfolio</Description>
         </Name>

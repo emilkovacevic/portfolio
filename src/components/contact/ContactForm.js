@@ -7,17 +7,30 @@ const FormComponent = styled.div`
   height: 100vh;
   top: 0;
   left: 0;
-  background: var(--background);
+  bottom:0;
+  right:0;
+  background: rgba(0,0,0,0.5);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   overflow-Y:scroll;
   z-index:999;
+  }
+`;
+
+const FormWrapper = styled.div`
+  margin: 5em;
+  padding: 4em;
+  border:1px solid var(--text);
+  display:block;
+  color:var(--text);
+  line-height:1.8;
+  background: var(--background);
   .closeForm{
-    position:absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    position:relative;
+    left:15em;
+    bottom:1em;
     border:none;
     background:none;
     font-size:1.8rem;
@@ -27,13 +40,6 @@ const FormComponent = styled.div`
       color: var(--button-hover);
     }
   }
-`;
-
-const FormWrapper = styled.div`
-  margin: 5rem 5% 5% 5%;
-  display:block;
-  color:var(--text);
-  line-height:1.8;
   .top-info{
       border-bottom:1px solid var(--text);
       padding-bottom:1em;
@@ -41,7 +47,6 @@ const FormWrapper = styled.div`
   }
   .required{
       color:red;
-      padding-left: 0.2em;
       font-size:0.8rem;
       font-weight:400;
   }
@@ -79,33 +84,21 @@ const FormWrapper = styled.div`
   .submit-btn,
   .reset-btn{
     cursor:pointer;
-    padding: 1em 2em;
+    padding: 1em;
     margin-bottom:1em;
   }
   .file{
     margin-top:1em;
   }
   .submit-btn{
-    padding: 1em 25%;
-    margin-right:1em;
+    padding:1em 8em;
+    margin-right:2em;
   }
   span{
-    margin:auto;
+    margin:0;
     font-size:1.2rem;
     font-weight:600;
   }
-  @media (max-width: 320px){
-    padding-top:150%;
-    margin:0 0.5em;
-    *{
-      max-width:250px;
-      padding: 0;
-      margin:auto;
-    }
-    .buttons{
-      display:block;
-      padding:0;
-    }
   }
 `;
 
@@ -118,10 +111,8 @@ function ContactForm({onClick}) {
   }
   return (
     <FormComponent>
-      <div>
-        <button className='closeForm' onClick={handleClick}><i className="fas fa-times-circle"></i></button>
-      </div>
       <FormWrapper>
+        <button className='closeForm' onClick={handleClick}><i className="fas fa-times-circle"></i></button>
         <form>
           <div>
             <h2>Contact Form</h2>  

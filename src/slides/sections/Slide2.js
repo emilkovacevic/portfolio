@@ -27,7 +27,6 @@ function Slide2() {
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
             >I am a self taught developer</Heading>
-
         </Component>
     )
 }

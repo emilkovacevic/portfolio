@@ -33,9 +33,10 @@ const Cards = styled.div`
 const Card = styled(motion.div)`
   background: var(--card-links__border);
   cursor:pointer;
-  box-shadow: '3px 5px 4px 4px black';
+  border:1px solid gray;
   img{
     width:100%;
+    min-height: 300px;
     max-height:300px;
     object-fit:cover;
     :hover, :focus{
@@ -45,10 +46,13 @@ const Card = styled(motion.div)`
   }
 `
 const Links = styled(motion.div)`
-  margin:1em;
+  margin:0 1em;
   h3{
     font-size:1.9rem;
     text-align:center;
+    cursor:default;
+    margin:.5em 0;
+    text-transform:uppercase;
   }
   span{
     margin: 1em 0;
@@ -58,12 +62,13 @@ const Links = styled(motion.div)`
       color: var(--link);
       font-size:1.4rem;
       text-decoration:none;
+      margin:.5em 0;
       :hover{ color: var(--button-hover)}
     }
   }
 `;
 
-function Slide3() {
+function ProjectsPage() {
   return (
     <Component>
       <Container>
@@ -76,14 +81,14 @@ function Slide3() {
                 boxShadow: '3px 3px 14px var(--text)'
               }}
               >
-                <a href={project.link}>
+                <a href={project.LiveLink} target="_blank" rel="noreferrer">
                   <img src={project.image.link} alt={project.image.alt} />
                 </a>
                 <Links>
                   <h3>{project.name}</h3>
                   <span>
-                    <a href={project.LiveLink}>Demo: <i className="fas fa-cog"></i></a>
-                    <a href={project.gitLink}>Code: <i className="fab fa-github-square"></i></a>
+                    <a href={project.LiveLink}  target="_blank" rel="noreferrer">Demo: <i className="fas fa-cog"></i></a>
+                    <a href={project.gitLink}  target="_blank" rel="noreferrer">Code: <i className="fab fa-github-square"></i></a>
                   </span>
                 </Links>
               </Card>
@@ -95,4 +100,4 @@ function Slide3() {
   );
 }
 
-export default Slide3;
+export default ProjectsPage;

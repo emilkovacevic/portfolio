@@ -10,6 +10,13 @@ export const Component = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&display=swap");
   font-family: "Montserrat", sans-serif;
 
+  .personal{
+    img{
+      width:100%;
+      object-fit:cover;
+      margin:1em 0;
+    }
+  }
   h1 {
     border-bottom: 1px solid var(--text);
     color: var(--heading);
@@ -23,7 +30,7 @@ export const Component = styled.div`
     margin: 1em 0;
   }
   p{
-    max-width: 600px;
+    max-width: 800px;
   }
   a {
     text-decoration: none;
@@ -61,4 +68,13 @@ export const Main = styled.div`
 export const Aside = styled.div`
   margin: 1em;
   min-width:150px;
+  p{
+    padding:1em 0;
+  }
+  .intrest-image{
+    float:left;
+    height:150px;
+    padding:0 1em;
+  }
+
 `;
