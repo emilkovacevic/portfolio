@@ -73,7 +73,8 @@ export const Aside = styled.div`
   }
   .intrest-image{
     float:left;
-    height:150px;
+    min-height:150px;
+    object-fit:cover;
     padding:0 1em;
   }
 

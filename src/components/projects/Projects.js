@@ -32,10 +32,12 @@ const Cards = styled.div`
 `
 const Card = styled(motion.div)`
   background: var(--card-links__border);
+  box-sizing:border-box;
   cursor:pointer;
   border:1px solid gray;
   img{
-    width:100%;
+    width:90%;
+    padding:5%;
     min-height: 300px;
     max-height:300px;
     object-fit:cover;

@@ -20,8 +20,9 @@ const FormComponent = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  margin: 5em;
-  padding: 4em;
+  margin: 1em auto;
+  padding: 2em 3em ;
+  padding-bottom:1em;
   border:1px solid var(--text);
   display:block;
   color:var(--text);
@@ -30,7 +31,7 @@ const FormWrapper = styled.div`
   .closeForm{
     position:relative;
     left:15em;
-    bottom:1em;
+    bottom:0em;
     border:none;
     background:none;
     font-size:1.8rem;

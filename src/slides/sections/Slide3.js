@@ -1,24 +1,18 @@
 import React from 'react'
-import styled from 'styled-components'
-import {motion} from 'framer-motion'
+import useMousePosition from '../../hooks/useMousePosition'
+import style from 'styled-components'
 
-const Section = styled(motion.div)`
-margin:auto;
-color:var(--heading);
-font-size: 3rem;
-margin: 1em;
-text-align:center;
-`
+const Canvas = style.canvas``
 
 function Slide3() {
+    const { clientX, clientY } = useMousePosition();
+
+    Canvas.fill= 'A'
     return (
-        <Section
-        initial={{opacity: 0}}
-        animate={{opacity: 1, transition:{duration: 2}}}
-        >
-            a tech enthusiast 
-        </Section>
-    )
-}
+      <div style={{height: '100vh', display:'flex', justifyContent:'center', alignItems:'center'}}>
+        <Canvas></Canvas>
+      </div>
+      );
+    };
 
 export default Slide3

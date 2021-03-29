@@ -11,6 +11,7 @@ body {
 /* HOT FIX!! NAV TRANSITION ON SCROLL */
 .navbar{
   background-color: var(--background);
+  border-bottom: 1px solid var(--text);
   position:fixed;
   top: 0;
   z-index: 995;

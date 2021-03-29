@@ -17,11 +17,12 @@ const Button = styled(motion.button)`
   cursor: pointer;
   outline: none;
   width: 100px;
+  margin: 0 0 1em 0;
   z-index: 99;
   padding: 0;
   i {
     font-size: 2em;
-    padding: 1.5rem 1em 0.5em 1em;
+    padding: 2rem 1em 0.5em 1em;
     text-aling: center;
     margin: 0;
     text-shadow: 0px 2px 2px var(--button-hover);
