@@ -1,7 +1,6 @@
 import React from 'react'
 import useMousePosition from '../../hooks/useMousePosition'
 import style from 'styled-components'
-
 const Canvas = style.canvas``
 
 function Slide3() {
@@ -11,6 +10,7 @@ function Slide3() {
     return (
       <div style={{height: '100vh', display:'flex', justifyContent:'center', alignItems:'center'}}>
         <Canvas></Canvas>
+        canvas page
       </div>
       );
     };

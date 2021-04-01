@@ -19,6 +19,11 @@ const Container = styled(motion.div)`
   justify-content:center;
   max-width:1200px;
   margin:1em auto;
+  a{
+    color: var(--link);
+    margin:0 0.6em;
+    font-size:2rem;
+  }
   h2{
     margin: 1rem 1em;
   }
@@ -37,7 +42,7 @@ const Card = styled(motion.div)`
   border:1px solid gray;
   img{
     width:90%;
-    padding:5%;
+    padding:1em 0;
     min-height: 300px;
     max-height:300px;
     object-fit:cover;
@@ -74,6 +79,7 @@ function ProjectsPage() {
   return (
     <Component>
       <Container>
+        <a href='http://emilkovacevic.com/'> <i className="fas fa-home"></i></a> 
         <h2>Projects I Worked On</h2>
         <Cards>
           {projects.map((project, index) => {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomberman</title>
+    <link rel="stylesheet" href="bomberman.css">
+</head>
+
+<body id="body">
+    <header>
+        <div id="head">
+            <h1>Bomberman</h1>
+            <p>a two player game</p>
+            <br>
+            <p>controls</p>
+            <div class="controls">
+                <div>
+                    <p>player 1:</p>
+                    <ul>
+                        <li>move left - left arrow</li>
+                        <li>move up - up arrow</li>
+                        <li>move right - right arrow</li>
+                        <li>move down - down arrow</li>
+                        <li>bomb - 0 key</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>player 2:</p>
+                    <ul>
+                        <li>move left - a key</li>
+                        <li>move up - w key</li>
+                        <li>move right - d key</li>
+                        <li>move down - s key</li>
+                        <li>bomb - b key</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Game Rules</h2>
+            <p>Don't die</p>
+            <p>You can spawn more bombs at once by collecting green B bombs</p>
+            <p>Bomb range increases by collecting the + powerups</p>
+            <button id="start-game-btn">Start Game</button>
+            <p class="link-to-creator">The game has 3 worlds on every start random one is chosen.</p>
+            <p class="link-to-creator">You can <a href="./worldCreator.html">click here</a> and create a new game world,
+                copy the result code and create another world array. Paste in the generated values and add the name of new
+                array to the worlds array in the bomberman.js file to run it</p>
+            <div class="footer">
+                <p>made by Emil Jan 2021 |
+                    <a href="#">Github Link</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="game-ui">
+            <h1 id="winner">Who will win?</h1>
+            <h2 id="active-world-dispay">World</h2>
+            <h2>Timer: <span id="timer"></span></h2>
+        </div>
+    </header>
+    <main>
+        <div id="world-container"></div>
+    </main>
+    <script src="./bomberman.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background: rgb(251,250,255);
+            background: linear-gradient(0deg, rgba(251,250,255,1) 0%, rgba(174,229,241,1) 100%);
+
+        }
+        h1, h2, h3, h4{
+            color: #c04a06;
+        }
+        p{
+            margin: 1em 10%;
+            word-wrap: break-word; 
+            color: #5f3a25;   
+        }
+        header{
+            margin: 0 20%;
+            text-align: center;
+        }
+        #output{
+            border: 1px solid black;
+        }
+        #world{
+            background-color: rgb(189, 189, 189);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 38em;
+    margin: 1em auto;
+    box-sizing: border-box;
+    border: unset;
+    }
+    .div{
+    background-color: rgb(105, 69, 69);
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+        }
+        .free-path{
+    background-color: rgb(189, 189, 189);
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+.destructiable-wall{
+    background-color: green;
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bomberman world creator</h1>
+        <h2>Instructions</h2>
+        <p>mouse click on world box and square turns green <br>
+        if you click on green square it becomes light gray <br>
+        and finally gray goes back to brown</p>
+        <h4>Note</h4>
+        <p>brown are walls and they are indestructiable, green is destructiable walls, light gray are walkable paths</p>
+        <p>When you are done, copy the output below and add it to the worlds in bomberman.js</p>
+        <p> output</p>
+        <p style="font-size: 2.5em; padding: 0; margin: 0;">☟</p>
+        <p id="output"></p>
+    <div id="world"></div>
+    <h2><a href="./bomberman.html">Go back to play the Game</a></h2>
+    <p>Warning! if you don't save the array it will be lost when you refresh / leave the page</p>        
+    </header>
+    <script>
+        let gameWindow = document.getElementById('world')
+        let output = document.getElementById('output')
+        let str = '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'
+        output.textContent = str
+        let ara = []
+        let drawRes = []
+        for(let i = 0; i< 625; i++){
+            let div = document.createElement('div')
+            div.classList.add('div')
+            gameWindow.appendChild(div)
+            ara.push(0)
+            drawRes.push(div)
+            div.addEventListener('mousedown',()=>{
+                let pos = Array.prototype.slice.call(document.getElementById('world').children)
+                let selectedDiv = pos.indexOf(div)
+                if(drawRes[selectedDiv].classList.contains('destructiable-wall')){
+                    drawRes[selectedDiv].classList.remove('destructiable-wall')
+                    drawRes[selectedDiv].classList.add('free-path')
+                    ara[selectedDiv] = 2
+                }
+                else if(
+                    drawRes[selectedDiv].classList.contains('free-path') 
+                    ){
+                    drawRes[selectedDiv].classList.remove('free-path') 
+                    ara[selectedDiv] = 0
+                }
+                else{
+                drawRes[selectedDiv].classList.add('destructiable-wall')
+                ara[selectedDiv] = 1
+
+                }
+                str = `${ara}`
+                output.textContent = str
+            })
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,904 @@
+[
+    {
+        "Title": "Jaws",
+        "Year": "1975",
+        "Rated": "PG",
+        "Released": "20 Jun 1975",
+        "Runtime": "124 min",
+        "Genre": "Adventure, Thriller",
+        "Director": "Steven Spielberg",
+        "Writer": "Peter Benchley (screenplay), Carl Gottlieb (screenplay), Peter Benchley (based on the novel by)",
+        "Actors": "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary",
+        "Plot": "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Won 3 Oscars. Another 11 wins & 20 nominations.",
+        "Video":"https://www.youtube.com/embed/U1fu_sA7XhE",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "98%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "87/100"
+            }
+        ],
+        "Metascore": "87",
+        "imdbRating": "8.0",
+        "imdbVotes": "542,393",
+        "imdbID": "tt0073195",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$260,758,300",
+        "Production": "Universal Pictures, Zanuck/Brown Productions",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Aliens",
+        "Year": "1986",
+        "Rated": "R",
+        "Released": "18 Jul 1986",
+        "Runtime": "137 min",
+        "Genre": "Action, Adventure, Sci-Fi, Thriller",
+        "Director": "James Cameron",
+        "Writer": "James Cameron (story by), David Giler (story by), Walter Hill (story by), Dan O'Bannon (based on characters created by), Ronald Shusett (based on characters created by), James Cameron (screenplay by)",
+        "Actors": "Sigourney Weaver, Carrie Henn, Michael Biehn, Paul Reiser",
+        "Plot": "Fifty-seven years after surviving an apocalyptic attack aboard her space vessel by merciless space creatures, Officer Ripley awakens from hyper-sleep and tries to warn anyone who will listen about the predators.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Won 2 Oscars. Another 18 wins & 23 nominations.",
+        "Video":"https://www.youtube.com/embed/bTCaVjQ8nU4",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZGU2OGY5ZTYtMWNhYy00NjZiLWI0NjUtZmNhY2JhNDRmODU3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.3/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "97%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "84/100"
+            }
+        ],
+        "Metascore": "84",
+        "imdbRating": "8.3",
+        "imdbVotes": "651,238",
+        "imdbID": "tt0090605",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$85,160,248",
+        "Production": "Twentieth Century Fox, Brandywine Productions",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Bad Santa",
+        "Year": "2003",
+        "Rated": "R",
+        "Released": "26 Nov 2003",
+        "Runtime": "92 min",
+        "Genre": "Comedy, Crime, Drama",
+        "Director": "Terry Zwigoff",
+        "Writer": "Glenn Ficarra, John Requa",
+        "Actors": "Billy Bob Thornton, Tony Cox, Brett Kelly, Lauren Graham",
+        "Plot": "A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.",
+        "Language": "English",
+        "Country": "Germany, USA",
+        "Awards": "Nominated for 1 Golden Globe. Another 1 win & 11 nominations.",
+        "Video":"https://www.youtube.com/embed/xQvaoRScND4",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjA4Njg1MDcwN15BMl5BanBnXkFtZTYwMzAxNjM3._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "79%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "70/100"
+            }
+        ],
+        "Metascore": "70",
+        "imdbRating": "7.0",
+        "imdbVotes": "135,432",
+        "imdbID": "tt0307987",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$60,060,328",
+        "Production": "Dimension Films, Triptych Pictures, The KL Line",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Legally Blonde",
+        "Year": "2001",
+        "Rated": "PG-13",
+        "Released": "13 Jul 2001",
+        "Runtime": "96 min",
+        "Genre": "Comedy, Romance",
+        "Director": "Robert Luketic",
+        "Writer": "Amanda Brown (novel), Karen McCullah (screenplay), Kirsten Smith (screenplay)",
+        "Actors": "Reese Witherspoon, Luke Wilson, Selma Blair, Matthew Davis",
+        "Plot": "Elle Woods, a fashionable sorority queen, is dumped by her boyfriend. She decides to follow him to law school. While she is there, she figures out that there is more to her than just looks.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Nominated for 2 Golden Globes. Another 6 wins & 12 nominations.",
+        "Video":"https://www.youtube.com/embed/Phm3lpdR3_g",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.3/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "70%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "59/100"
+            }
+        ],
+        "Metascore": "59",
+        "imdbRating": "6.3",
+        "imdbVotes": "184,659",
+        "imdbID": "tt0250494",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$96,520,674",
+        "Production": "Metro Goldwyn Mayer, Marc Platt Productions",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "The Dark Knight",
+        "Year": "2008",
+        "Rated": "PG-13",
+        "Released": "18 Jul 2008",
+        "Runtime": "152 min",
+        "Genre": "Action, Crime, Drama, Thriller",
+        "Director": "Christopher Nolan",
+        "Writer": "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
+        "Actors": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
+        "Plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "Language": "English, Mandarin",
+        "Country": "USA, UK",
+        "Awards": "Won 2 Oscars. Another 156 wins & 163 nominations.",
+        "Video": "https://www.youtube.com/embed/EXeTwQWrcwY",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "9.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "94%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "84/100"
+            }
+        ],
+        "Metascore": "84",
+        "imdbRating": "9.0",
+        "imdbVotes": "2,294,527",
+        "imdbID": "tt0468569",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$534,858,444",
+        "Production": "Syncopy",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "The Pursuit of Happyness",
+        "Year": "2006",
+        "Rated": "PG-13",
+        "Released": "15 Dec 2006",
+        "Runtime": "117 min",
+        "Genre": "Biography, Drama",
+        "Director": "Gabriele Muccino",
+        "Writer": "Steve Conrad",
+        "Actors": "Will Smith, Jaden Smith, Thandie Newton, Brian Howe",
+        "Plot": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
+        "Language": "English, Cantonese",
+        "Country": "USA",
+        "Awards": "Nominated for 1 Oscar. Another 12 wins & 25 nominations.",
+        "Video": "https://www.youtube.com/embed/DMOBlEcRuw8",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "67%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "64/100"
+            }
+        ],
+        "Metascore": "64",
+        "imdbRating": "8.0",
+        "imdbVotes": "446,918",
+        "imdbID": "tt0454921",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$163,566,459",
+        "Production": "Overbrook Entertainment, Columbia Pictures Corporation, Escape Artists",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "The Shawshank Redemption",
+        "Year": "1994",
+        "Rated": "R",
+        "Released": "14 Oct 1994",
+        "Runtime": "142 min",
+        "Genre": "Drama",
+        "Director": "Frank Darabont",
+        "Writer": "Stephen King (short story \"Rita Hayworth and Shawshank Redemption\"), Frank Darabont (screenplay)",
+        "Actors": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+        "Plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Nominated for 7 Oscars. Another 21 wins & 36 nominations.",
+        "Video": "https://www.youtube.com/embed/6hB3S9bIaco",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "9.3/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "91%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "80/100"
+            }
+        ],
+        "Metascore": "80",
+        "imdbRating": "9.3",
+        "imdbVotes": "2,338,688",
+        "imdbID": "tt0111161",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$28,699,976",
+        "Production": "Columbia Pictures, Castle Rock Entertainment",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Year": "1977",
+        "Rated": "PG",
+        "Released": "25 May 1977",
+        "Runtime": "121 min",
+        "Genre": "Action, Adventure, Fantasy, Sci-Fi",
+        "Director": "George Lucas",
+        "Writer": "George Lucas",
+        "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+        "Plot": "The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance and restore freedom and justice to the Galaxy.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Won 6 Oscars. Another 52 wins & 29 nominations.",
+        "Video": "https://www.youtube.com/embed/vZ734NWnAHA",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "92%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "90/100"
+            }
+        ],
+        "Metascore": "90",
+        "imdbRating": "8.6",
+        "imdbVotes": "1,227,656",
+        "imdbID": "tt0076759",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$460,998,507",
+        "Production": "Lucasfilm Ltd.",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Harry Potter and the Deathly Hallows: Part 2",
+        "Year": "2011",
+        "Rated": "PG-13",
+        "Released": "15 Jul 2011",
+        "Runtime": "130 min",
+        "Genre": "Adventure, Drama, Fantasy, Mystery",
+        "Director": "David Yates",
+        "Writer": "Steve Kloves (screenplay), J.K. Rowling (novel)",
+        "Actors": "Ralph Fiennes, Michael Gambon, Alan Rickman, Daniel Radcliffe",
+        "Plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+        "Language": "English",
+        "Country": "UK, USA",
+        "Awards": "Nominated for 3 Oscars. Another 46 wins & 91 nominations.",
+        "Video": "https://www.youtube.com/embed/MxqsmsA8y5k",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "96%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "85/100"
+            }
+        ],
+        "Metascore": "85",
+        "imdbRating": "8.1",
+        "imdbVotes": "761,228",
+        "imdbID": "tt1201607",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$381,409,310",
+        "Production": "Heyday Films, Moving Picture Company, Warner Bros.",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "The Hobbit: An Unexpected Journey",
+        "Year": "2012",
+        "Rated": "PG-13",
+        "Released": "14 Dec 2012",
+        "Runtime": "169 min",
+        "Genre": "Adventure, Fantasy",
+        "Director": "Peter Jackson",
+        "Writer": "Fran Walsh (screenplay), Philippa Boyens (screenplay), Peter Jackson (screenplay), Guillermo del Toro (screenplay), J.R.R. Tolkien (novel)",
+        "Actors": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
+        "Plot": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.",
+        "Language": "English",
+        "Country": "New Zealand, USA",
+        "Awards": "Nominated for 3 Oscars. Another 11 wins & 72 nominations.",
+        "Video": "https://www.youtube.com/embed/SDnYMbYB-nU",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "64%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "58/100"
+            }
+        ],
+        "Metascore": "58",
+        "imdbRating": "7.8",
+        "imdbVotes": "755,242",
+        "imdbID": "tt0903624",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$303,003,568",
+        "Production": "WingNut Films",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Mulan",
+        "Year": "1998",
+        "Rated": "G",
+        "Released": "19 Jun 1998",
+        "Runtime": "88 min",
+        "Genre": "Animation, Adventure, Family, Fantasy, Musical, War",
+        "Director": "Tony Bancroft, Barry Cook",
+        "Writer": "Robert D. San Souci (based on a story by), Rita Hsiao (screenplay by), Chris Sanders (screenplay by), Philip LaZebnik (screenplay by), Raymond Singer (screenplay by), Eugenia Bostwick-Singer (screenplay by), Dean DeBlois (story co-head), John Sanford (story), Chris Williams (story), Tim Hodge (story), Julius Aguimatang (story), Burny Mattinson (story), Lorna Cook (story), Barry Johnson (story), Thom Enriquez (story), Ed Gombert (story), Joe Grant (story), Floyd Norman (story), Linda Woolverton (additional story material), Jodi Ann Johnson (additional story material), Alan Ormsby (additional story material), David Reynolds (additional story material), Don Dougherty (additional story material), Jorgen Klubien (additional story material), Denis Rich (additional story material), Joe Ekers (additional story material), Theodore Newton (additional story material), Larry Scholl (additional story material), Daan Jippes (additional story material), Frank Nissen (additional story material), Jeff Snow (additional story material)",
+        "Actors": "Miguel Ferrer, Harvey Fierstein, Freda Foh Shen, June Foray",
+        "Plot": "To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
+        "Language": "English, Mandarin",
+        "Country": "USA",
+        "Awards": "Nominated for 1 Oscar. Another 17 wins & 20 nominations.",
+        "Video": "https://www.youtube.com/embed/HKH7_n425Ss",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODkxNGQ1NWYtNzg0Ny00Yjg3LThmZTItMjE2YjhmZTQ0ODY5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "86%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "71/100"
+            }
+        ],
+        "Metascore": "71",
+        "imdbRating": "7.6",
+        "imdbVotes": "255,990",
+        "imdbID": "tt0120762",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$120,620,254",
+        "Production": "Walt Disney Pictures, Walt Disney Animation",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Titanic",
+        "Year": "1997",
+        "Rated": "PG-13",
+        "Released": "19 Dec 1997",
+        "Runtime": "194 min",
+        "Genre": "Drama, Romance",
+        "Director": "James Cameron",
+        "Writer": "James Cameron",
+        "Actors": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
+        "Plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "Language": "English, Swedish, Italian, French",
+        "Country": "USA, Mexico",
+        "Awards": "Won 11 Oscars. Another 112 wins & 83 nominations.",
+        "Video": "https://www.youtube.com/embed/kVrqfYjkTdQ",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "89%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "75/100"
+            }
+        ],
+        "Metascore": "75",
+        "imdbRating": "7.8",
+        "imdbVotes": "1,042,391",
+        "imdbID": "tt0120338",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$659,363,944",
+        "Production": "20th Century Fox, Lightstorm Entertainment, Paramount Pictures",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Legend",
+        "Year": "2015",
+        "Rated": "R",
+        "Released": "20 Nov 2015",
+        "Runtime": "132 min",
+        "Genre": "Biography, Crime, Drama, Thriller",
+        "Director": "Brian Helgeland",
+        "Writer": "Brian Helgeland, John Pearson (book)",
+        "Actors": "Paul Anderson, Tom Hardy, Christopher Eccleston, Joshua Hill",
+        "Plot": "Identical twin gangsters Ronald and Reginald Kray terrorize London during the 1960s.",
+        "Language": "English",
+        "Country": "UK, France, USA",
+        "Awards": "6 wins & 10 nominations.",
+        "Video": "https://www.youtube.com/embed/yI3v6KfR9Mw",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0MjkyODQ3NF5BMl5BanBnXkFtZTgwNDM1OTk1NjE@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.9/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "61%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "55/100"
+            }
+        ],
+        "Metascore": "55",
+        "imdbRating": "6.9",
+        "imdbVotes": "158,116",
+        "imdbID": "tt3569230",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$1,872,994",
+        "Production": "Working Title Films",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Seven Samurai",
+        "Year": "1954",
+        "Rated": "Not Rated",
+        "Released": "19 Nov 1956",
+        "Runtime": "207 min",
+        "Genre": "Action, Adventure, Drama",
+        "Director": "Akira Kurosawa",
+        "Writer": "Akira Kurosawa (screenplay by), Shinobu Hashimoto (screenplay by), Hideo Oguni (screenplay by)",
+        "Actors": "Toshirô Mifune, Takashi Shimura, Keiko Tsushima, Yukiko Shimazaki",
+        "Plot": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
+        "Language": "Japanese",
+        "Country": "Japan",
+        "Awards": "Nominated for 2 Oscars. Another 5 wins & 6 nominations.",
+        "Video": "https://www.youtube.com/embed/wJ1TOratCTo",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOWE4ZDdhNmMtNzE5ZC00NzExLTlhNGMtY2ZhYjYzODEzODA1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "100%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "98/100"
+            }
+        ],
+        "Metascore": "98",
+        "imdbRating": "8.6",
+        "imdbVotes": "314,633",
+        "imdbID": "tt0047478",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$318,649",
+        "Production": "Toho Company",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "The Great Gatsby",
+        "Year": "2013",
+        "Rated": "PG-13",
+        "Released": "10 May 2013",
+        "Runtime": "143 min",
+        "Genre": "Drama, Romance",
+        "Director": "Baz Luhrmann",
+        "Writer": "Baz Luhrmann (screenplay), Craig Pearce (screenplay), F. Scott Fitzgerald (based on the novel by)",
+        "Actors": "Lisa Adam, Frank Aldridge, Amitabh Bachchan, Steve Bisley",
+        "Plot": "A writer and wall street trader, Nick, finds himself drawn to the past and lifestyle of his millionaire neighbor, Jay Gatsby.",
+        "Language": "English",
+        "Country": "Australia, USA",
+        "Awards": "Won 2 Oscars. Another 48 wins & 85 nominations.",
+        "Video": "https://www.youtube.com/embed/2zHHkSu1br4",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.2/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "48%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "55/100"
+            }
+        ],
+        "Metascore": "55",
+        "imdbRating": "7.2",
+        "imdbVotes": "477,148",
+        "imdbID": "tt1343092",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$144,840,419",
+        "Production": "Bazmark Films, Red Wagon Entertainment",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Million Dollar Baby",
+        "Year": "2004",
+        "Rated": "PG-13",
+        "Released": "28 Jan 2005",
+        "Runtime": "132 min",
+        "Genre": "Drama, Sport",
+        "Director": "Clint Eastwood",
+        "Writer": "Paul Haggis (screenplay), F.X. Toole (stories)",
+        "Actors": "Clint Eastwood, Hilary Swank, Morgan Freeman, Jay Baruchel",
+        "Plot": "A determined woman works with a hardened boxing trainer to become a professional.",
+        "Language": "English, Irish",
+        "Country": "USA",
+        "Awards": "Won 4 Oscars. Another 64 wins & 85 nominations.",
+        "Video": "https://www.youtube.com/embed/5_RsHRmIRBY",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "91%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "86/100"
+            }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.1",
+        "imdbVotes": "634,808",
+        "imdbID": "tt0405159",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$100,492,203",
+        "Production": "Malpaso Company",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "World War Z",
+        "Year": "2013",
+        "Rated": "PG-13",
+        "Released": "21 Jun 2013",
+        "Runtime": "116 min",
+        "Genre": "Action, Adventure, Horror, Sci-Fi",
+        "Director": "Marc Forster",
+        "Writer": "Matthew Michael Carnahan (screenplay), Drew Goddard (screenplay), Damon Lindelof (screenplay), Matthew Michael Carnahan (screen story), J. Michael Straczynski (screen story), Max Brooks (based on the novel by)",
+        "Actors": "Brad Pitt, Mireille Enos, Daniella Kertesz, James Badge Dale",
+        "Plot": "Former United Nations employee Gerry Lane traverses the world in a race against time to stop a zombie pandemic that is toppling armies and governments and threatens to destroy humanity itself.",
+        "Language": "English, Spanish, Hebrew, Arabic",
+        "Country": "USA, UK, Malta",
+        "Awards": "3 wins & 24 nominations.",
+        "Video": "https://www.youtube.com/embed/Md6Dvxdr0AQ",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDQ4YzFmNzktMmM5ZC00MDZjLTk1OTktNDE2ODE4YjM2MjJjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "66%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "63/100"
+            }
+        ],
+        "Metascore": "63",
+        "imdbRating": "7.0",
+        "imdbVotes": "600,191",
+        "imdbID": "tt0816711",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$202,359,711",
+        "Production": "Plan B Films, 2DUX2",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "1900 / Novecento",
+        "Year": "1976",
+        "Rated": "Unrated",
+        "Released": "04 Nov 1977",
+        "Runtime": "317 min",
+        "Genre": "Drama, History",
+        "Director": "Bernardo Bertolucci",
+        "Writer": "Franco Arcalli (screenplay by), Giuseppe Bertolucci (screenplay by), Bernardo Bertolucci (screenplay by)",
+        "Actors": "Robert De Niro, Gérard Depardieu, Dominique Sanda, Francesca Bertini",
+        "Plot": "The epic tale of a class struggle in twentieth century Italy, as seen through the eyes of two childhood friends on opposing sides.",
+        "Language": "Italian",
+        "Country": "Italy, France, West Germany",
+        "Awards": "2 wins & 5 nominations.",
+        "Video": "https://www.youtube.com/embed/BkdHDr_2yb0",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNTFiZmU4NzMtMWY0NS00MGYyLThjMmMtNDk0ZmNlNTg3N2FmXkEyXkFqcGdeQXVyMTA2ODMzMDU@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.7/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "58%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "70/100"
+            }
+        ],
+        "Metascore": "70",
+        "imdbRating": "7.7",
+        "imdbVotes": "22,400",
+        "imdbID": "tt0074084",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "Paramount",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Her",
+        "Year": "2013",
+        "Rated": "R",
+        "Released": "10 Jan 2014",
+        "Runtime": "126 min",
+        "Genre": "Drama, Romance, Sci-Fi",
+        "Director": "Spike Jonze",
+        "Writer": "Spike Jonze",
+        "Actors": "Joaquin Phoenix, Lynn Adrianna Freedman, Lisa Renee Pitts, Gabe Gomez",
+        "Plot": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Won 1 Oscar. Another 81 wins & 185 nominations.",
+        "Video": "https://www.youtube.com/embed/6QRvTv_tpw0",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "94%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "90/100"
+            }
+        ],
+        "Metascore": "90",
+        "imdbRating": "8.0",
+        "imdbVotes": "538,535",
+        "imdbID": "tt1798709",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$25,568,251",
+        "Production": "Annapurna Pictures",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "No Country for Old Men",
+        "Year": "2007",
+        "Rated": "R",
+        "Released": "21 Nov 2007",
+        "Runtime": "122 min",
+        "Genre": "Crime, Drama, Thriller",
+        "Director": "Ethan Coen, Joel Coen",
+        "Writer": "Joel Coen (screenplay), Ethan Coen (screenplay), Cormac McCarthy (novel)",
+        "Actors": "Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson",
+        "Plot": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.",
+        "Language": "English, Spanish",
+        "Country": "USA, Mexico",
+        "Awards": "Won 4 Oscars. Another 160 wins & 139 nominations.",
+        "Video": "https://www.youtube.com/embed/38A__WT3-o0",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "93%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "91/100"
+            }
+        ],
+        "Metascore": "91",
+        "imdbRating": "8.1",
+        "imdbVotes": "853,097",
+        "imdbID": "tt0477348",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$74,283,625",
+        "Production": "Paramount Vantage, Miramax, Scott Rudin Productions",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Lara Croft: Tomb Raider",
+        "Year": "2001",
+        "Rated": "PG-13",
+        "Released": "15 Jun 2001",
+        "Runtime": "100 min",
+        "Genre": "Action, Adventure, Fantasy, Thriller",
+        "Director": "Simon West",
+        "Writer": "Sara B. Cooper (story), Mike Werb (story), Michael Colleary (story), Simon West (adaptation), Patrick Massett (screenplay), John Zinman (screenplay)",
+        "Actors": "Angelina Jolie, Jon Voight, Iain Glen, Noah Taylor",
+        "Plot": "Video game adventurer Lara Croft comes to life in a movie where she races against time and villains to recover powerful ancient artifacts.",
+        "Language": "English",
+        "Country": "USA, UK, Japan, Germany",
+        "Awards": "4 wins & 21 nominations.",
+        "Video": "https://www.youtube.com/embed/cnNBqNb3taw",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNzMzODVjMWUtYmIxZS00NDlkLTlmNTktNjI5NTdhZjUzYzY1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "5.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "20%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "33/100"
+            }
+        ],
+        "Metascore": "33",
+        "imdbRating": "5.8",
+        "imdbVotes": "197,465",
+        "imdbID": "tt0146316",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$131,168,070",
+        "Production": "Mutual Film Company, Lawrence Gordon Productions, Paramount Pictures",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "It's Kind of a Funny Story",
+        "Year": "2010",
+        "Rated": "PG-13",
+        "Released": "08 Oct 2010",
+        "Runtime": "101 min",
+        "Genre": "Comedy, Drama, Romance",
+        "Director": "Anna Boden, Ryan Fleck",
+        "Writer": "Anna Boden (screenplay), Ryan Fleck (screenplay), Ned Vizzini (novel)",
+        "Actors": "Keir Gilchrist, Dana DeVestern, Lauren Graham, Jim Gaffigan",
+        "Plot": "A clinically depressed teenager gets a new start after he checks himself into an adult psychiatric ward.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "2 nominations.",
+        "Video": "https://www.youtube.com/embed/cyFCpQK-j7U",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTk0MTAyNjQ2N15BMl5BanBnXkFtZTcwNjYwOTU3Mw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "57%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "63/100"
+            }
+        ],
+        "Metascore": "63",
+        "imdbRating": "7.1",
+        "imdbVotes": "135,257",
+        "imdbID": "tt0804497",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$6,363,628",
+        "Production": "Misher Films",
+        "Website": "N/A",
+        "Response": "True"
+    }
+]

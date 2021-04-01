@@ -1,0 +1,290 @@
+
+
+body{
+    background: rgb(251,250,255);
+    background: linear-gradient(0deg, rgba(251,250,255,1) 0%, rgba(174,229,241,1) 100%);
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+/* ui */
+
+.layout-x{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+header .head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: 0;
+    margin: auto;
+}
+.controls{
+    text-align: center;
+    margin: 1em 10%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#active-world-dispay{
+    margin: auto;
+    padding: 1em;
+    font-size: 2em;
+}
+h1{
+    font-family: monospace;
+    font-size: 2.5rem;
+    color: rgb(219, 84, 21);
+    text-shadow: 2px 2px 2px rgb(100, 100, 100);
+    margin-bottom: 1em;
+}
+h2{
+    font-family: sans-serif;
+    color: rgb(219, 84, 21);
+    text-shadow: 2px 2px 2px rgb(100, 100, 100);
+    text-align: center;
+    margin: 0.5em;
+}
+p, li{
+    font-size: 1.3em;
+    color: rgb(219, 84, 21);
+    margin: 0 1em;
+    list-style-type: none;
+}
+.controls ul{
+    margin: 1em;
+    text-align: left;
+    border: 1px solid sienna;
+    padding: 0.5em 0.25em;
+}
+
+#start-game-btn{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1em;
+    padding: 0.5em 1em;
+    border: unset;
+    color: #ffffff;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff7400+0,ff7400+100;Orange+Flat */
+background: #ff7400; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff7400 0%, #ff7400 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ff7400 0%,#ff7400 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ff7400 0%,#ff7400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#ff7400',GradientType=0 ); /* IE6-9 */
+}
+#start-game-btn:hover{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff670f+0,ff670f+90,ff670f+99;Orange+Flat+%231 */
+background: #ff670f; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff670f 0%, #ff670f 90%, #ff670f 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ff670f 0%,#ff670f 90%,#ff670f 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ff670f 0%,#ff670f 90%,#ff670f 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+cursor: pointer;
+}
+
+.link-to-creator{
+    margin: 0 5%;
+    max-width: 800px;
+    text-align: justify;
+}
+.footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+}
+.footer p{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #c04a06;
+    padding: 1em;
+    padding-bottom: 1em;
+}
+a{
+    color: #c04a06;
+}
+
+
+/* game */
+
+main{
+    padding: 0.5em;
+    margin: auto;
+}
+#world-container{
+    background-color: rgb(189, 189, 189);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 38em;
+    margin: auto;
+    box-sizing: border-box;
+    border: unset;
+}
+.wall {
+    background-color: rgb(105, 69, 69);
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+.destructiable-wall {
+    background-color: green;
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+.free-path{
+    background-color: rgb(189, 189, 189);
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+.new-path{
+    background-color: rgb(185, 151, 0);
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+.dead-player{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.dead-player::before{
+    content: "x";
+    text-align: center;
+    width: 1em;
+    background-color: rgb(255, 0, 0);
+    border-radius: 30%;
+}
+
+.player{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 18, 246);
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+.player-two{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(246, 2, 153);
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+
+
+.bomb{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bomb::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 50%;
+    border: unset;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.7);
+}
+.bomb::after{
+    content:",";
+    background-color:rgba(233, 137, 12, 0.651);
+    position: relative;
+    top: -0.6em;
+    left:-0.3em;
+    height: 50%;
+    transform: rotate(45deg);
+    border: unset;
+}
+.bomb-blast{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 84, 4, 0.822);
+}
+
+.new-bomb{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-bomb::before{
+    content: "B";
+    width: 100%;
+    text-align: center;
+    background-color: rgba(67, 231, 17, 0.801);
+    border-radius: 50%;
+    border: unset;
+}
+
+.new-bomb::after{
+    content:",";
+    background-color:rgba(233, 137, 12, 0.651);
+    position: relative;
+    top: -0.4em;
+    left:-0.35em;
+    transform: rotate(45deg);
+    border: unset;
+}
+.bomb-upgrade{
+    border: unset;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bomb-upgrade::before{
+    content: "+";
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 800;
+    background-color: rgba(0, 180, 235, 0.801);
+    color: rgb(255, 5, 5);
+    border: unset;
+}
+.hidden{
+    display: none;
+}

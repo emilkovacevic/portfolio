@@ -1,0 +1,76 @@
+<!-- Scrimba chalange -------------->
+<!-- Made By - Emil Jan 2021 ------->
+<!---------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrimba Film weekly chalange</title>
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+    <!-- google fonts icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-content">
+            <div class="navbar-logo">
+                <a class="logo-link" href="https://scrimba.com/" target="_blank"> <img src="https://camo.githubusercontent.com/602667ef67af2c010b11d11789f22f87b54b7f6509adf111e809633795553292/68747470733a2f2f692e706f7374696d672e63632f3032744b425477442f626c75652e706e67"></a>
+                <a href="./index.html">Films challenge</a>
+              </div>
+            <div class="nav-links">
+                <a id='mobile-nav' href="#"><i class="fas fa-bars"></i></a>
+                <ul>
+                    <li><button id="log-in-btn" href="#">Log In</button></li>
+                    <li><button id="create-account-btn" href="#">create account</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="film-filtering-menu">
+                <input type="text" name="search" id="search" placeholder="🔎   |    search films">
+        </div>
+        <div id="movies-container"></div>
+    </main>
+     <!-- start #footer -->
+    <footer id="footer">
+        <div class="wrapper">
+        <div class="footer-about">
+            <h4>About</h4>
+            <p >FILM DATA TAKEN FROM <a style="color:#fff;" href="http://www.omdbapi.com/" target="_blank"><span class='lk'> OMDBb_api.com</span></a></p>
+            <ul>
+                <li><p>
+                    This website is made for a <a class='lk' href="https://scrimba.com" target="_blank" style="color:var(--body-bg)"><span class="lk">scrimba.com</span></a> Weekly Challenge</br></p>
+                </li>
+                <li>  <p>Made by Emil - January 2021</p></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Find Us</h4>
+            <ul>
+                <li><i class="fab fa-facebook"></i> Facebook</li>
+                <li><i class="fab fa-instagram"></i> Instagram</li>
+                <li><i class="fab fa-twitter"></i> Twitter</li>
+            </ul>
+            <ul>
+                <li><i class="fab fa-linkedin"></i> Linked In</li>
+                <li><i class="fab fa-youtube"></i> Youtube</li>
+                <li><i class="fab fa-github"></i> Github</li>
+            </ul>
+        </div>
+            <div class="footer-bottom"> 
+                 <p style="text-align:center">Thank you for visiting!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
