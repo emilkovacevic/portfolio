@@ -1,4 +1,5 @@
 import BombermanIMG from './projects/Bomberman/Image.JPG'
+import ResortIMG from './projects/Resort/ResortIMG.JPG'
 import FilmsImg from './projects/Films/Cover.JPG'
 import PortfolioIMG from './projects/Portfolio/PortfolioIMG.JPG'
 
@@ -17,7 +18,7 @@ export const personal = {
     
     aboutHeading:'Yes, that\'s me at the picture',
     aboutIMG: `${ProfilePic}`,
-    aboutMe: 'I have some knowlage of photo editing in Photoshop and I am familiar with Figma. As for my tehnical knowlage I would firstly mention and thank SCRIMBA.COM for teaching me the basics of front end development. From basic HTML all the way to modern React. I recommend the platform to anyone looking to enter the web development field in a constructive and "hands on" maner. Supported by an awesome comunity.',
+    aboutMe: 'I have some knowlage of photo editing in Photoshop and I am familiar with Figma. As for my tehnical knowlage I would firstly mention and thank SCRIMBA.COM for teaching me the basics of front end development. From basic HTML all the way to modern React. I recommend the platform to anyone looking to enter the web development field in a constructive and "hands on" maner. Supported by an awesome community.',
     
     intrestHeading: 'What I am looking for?',
     intrest: 'As a fresh web developer I am looking to grow my knowlage and work with an team of developers on team projects.',
@@ -103,4 +104,14 @@ export const projects = [
             alt: 'Bomberman image'    
         }
     },
+    {
+        index: 4,
+        name:'Resorts',
+        gitLink:'https://github.com/emilkovacevic/resort-website',
+        LiveLink:`./publicprojects/resort-website/index.html`,
+        image:{
+            link:`${ResortIMG}`,
+            alt: 'Resorts image'    
+        }
+    }
 ]

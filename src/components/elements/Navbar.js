@@ -43,7 +43,8 @@ const NavItems = styled.div`
   top: ${({ isVisible }) => (isVisible ? "0" : "-100vh")};
   h4{
     font-size: 2rem;
-    margin-bottom: 0.5em;
+    position:relative;
+    top:0.25em;
   }
     a{  
       color: var(--text);

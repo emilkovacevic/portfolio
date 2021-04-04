@@ -395,16 +395,17 @@ function setBomb(playerClass, bombpos, p_bombBlastSize){
 }
 //#endregion
 
+
+const reloadGame = ()=>{
+  window.location.reload();
+}
+
 function gameOver(){
-  worldDisplay.textContent = 'GAME OVER'
+  worldDisplay.textContent = 'GAME OVER | Restarting...'
   timerDispay.classList.add('hidden')
   document.removeEventListener("keyup", playerControler);
   worldDynamicsArray.forEach(div =>{
   })
-  setTimeout(reloadGame, 10000)
-  
+  setTimeout(reloadGame, 6000)
   // add UI elements
-}
-const reloadGame = ()=>{
-  window.reload();
 }

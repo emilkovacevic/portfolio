@@ -6,8 +6,9 @@ import { projects } from "../../data/data";
 
 const Component = styled.section`
 position: static;
+box-sizing:border-box;
 background: var(--background);
-padding: 6rem 0 3em 0;
+padding: 6rem 1em 3em 1em;
 margin:0;
 min-height:100vh;
 `
@@ -21,7 +22,7 @@ const Container = styled(motion.div)`
   margin:1em auto;
   a{
     color: var(--link);
-    margin:0 0.6em;
+    margin:0;
     font-size:2rem;
   }
   h2{
@@ -33,19 +34,22 @@ const Cards = styled.div`
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 1em;
-  margin: 2em 1em;
 `
 const Card = styled(motion.div)`
   background: var(--card-links__border);
   box-sizing:border-box;
   cursor:pointer;
   border:1px solid gray;
+  overflow:hidden;
+  object-fit:cover;
+  margin:1em;
+  padding:0;
   img{
-    width:90%;
-    padding:1em 0;
+    width:400px;
+    height:250px;
+    margin:0;
+    max-width:100%;
     min-height: 300px;
-    max-height:300px;
-    object-fit:cover;
     :hover, :focus{
       -webkit-filter: brightness(80%);
       -webkit-transition: all 0.5s ease;
@@ -79,7 +83,7 @@ function ProjectsPage() {
   return (
     <Component>
       <Container>
-        <a href='http://emilkovacevic.com/'> <i className="fas fa-home"></i></a> 
+        <a href='http://emilkovacevic.com/'><i class="fas fa-undo"></i> back</a> 
         <h2>Projects I Worked On</h2>
         <Cards>
           {projects.map((project, index) => {
@@ -92,6 +96,7 @@ function ProjectsPage() {
                 <a href={project.LiveLink} target="_blank" rel="noreferrer">
                   <img src={project.image.link} alt={project.image.alt} />
                 </a>
+                <hr />
                 <Links>
                   <h3>{project.name}</h3>
                   <span>

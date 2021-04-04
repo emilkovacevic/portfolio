@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built for learning and demonstration purposes.
+
+dependencies I used:
+      "@hookform/resolvers": "^2.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "firebase": "^8.3.2",
+    "framer-motion": "^3.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-motion": "^0.5.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.2.1",
+    "use-sound": "^2.0.1",
+    "web-vitals": "^1.0.1"
+
+
+## You are wellcome to clone the project and/or comment on it :) 
 
 ## Available Scripts
 
