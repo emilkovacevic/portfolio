@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import netflixImg from '../../data/projects/Netflix/NetflixImg.jpg'
 
 const Component = styled.div`
     height:100vh;
@@ -10,7 +11,6 @@ const Component = styled.div`
     align-items: center;
     p{
         margin:0.5em;
-        text-shadow: 0px 0px 1px var(--text);
     }
 `
 
@@ -24,30 +24,35 @@ const Heading = styled(motion.p)`
     padding-bottom:0.5rem;
     border-bottom:2px solid var(--heading);
 `
-const Instruction = styled(motion.p)`
-padding-bottom:1em;
+const Instruction = styled(motion.div)`
+
+img{
+    height:400px;
+    width:400px
+    max-width:600px;
+}
 `
 
-function Slide2() {
+function Slide5() {
     return (
         <Component>
-            <motion.div style={{
-                boxShadow:"7px 6px 15px var(--text)" 
-            }}
-            initial={{y:"50vh"}}
-            animate={{y: 0, transition:{duration:1}}}>
             <Heading
                 initial={{opacity: 0}}
-                animate={{opacity: 1, transition:{duration: 1}}}
-                >I am a self taught developer
+                animate={{opacity: 1, transition:{duration: 2}}}
+                >With them I even made a Netflix clone.
+                <br/>
                 </Heading>
                 <Instruction
                  initial={{opacity: 0}}
-                 animate={{opacity: 1, transition:{duration: 4}}}
-                >Keep on scrolling to continue with the slides...</Instruction>
-                </motion.div>
+                 animate={{opacity: 1, transition:{duration: 6}}}
+                >
+                    <img src={netflixImg} alt="netflix img"></img>
+                    <div>
+                        link link
+                    </div>
+                </Instruction>
         </Component>
     )
 }
 
-export default Slide2
+export default Slide5

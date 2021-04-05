@@ -2,8 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
-const Component = styled.div`
 
+const Component = styled.div`
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     p{
         margin:0.5em;
     }
@@ -19,16 +24,18 @@ const Heading = styled(motion.p)`
     padding-bottom:0.5rem;
 `
 
-function Slide5() {
+
+function Slide9() {
     return (
         <Component>
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
-                >There I learned a lot working on their course projects. Accelerating my pace of learning.
+                >Most important of them all
                 </Heading>
         </Component>
     )
 }
 
-export default Slide5
+export default Slide9
+
