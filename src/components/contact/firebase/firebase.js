@@ -1,16 +1,18 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-   apiKey: "AIzaSyBmW9AT48Qb5o2c1zSSoMlVSWFHHwwEGlw",
-   authDomain: "porfoliowebsite-f15cb.firebaseapp.com",
-   databaseURL: "https://porfoliowebsite-f15cb-default-rtdb.firebaseio.com",
-   projectId: "porfoliowebsite-f15cb",
-   storageBucket: "porfoliowebsite-f15cb.appspot.com",
-   messagingSenderId: "621885981771",
-   appId: "1:621885981771:web:f57dcc10075e42304db9ce"
+   apiKey: "AIzaSyBq34sVaOONjRgVYskJ-Fc1AKrSqZ3KZto",
+   authDomain: "emilkovacevic-website.firebaseapp.com",
+   databaseURL: "https://emilkovacevic-website-default-rtdb.firebaseio.com",
+   projectId: "emilkovacevic-website",
+   storageBucket: "emilkovacevic-website.appspot.com",
+   messagingSenderId: "1096580233742",
+   appId: "1:1096580233742:web:3da4f7d93ef84361b95a5f",
+   measurementId: "G-N0FX87RTF1"
 }
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
+firebase.analytics();
 export {db};
