@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, {keyframes}from "styled-components";
-import {db} from "./components/contact/firebase/firebase";
+import {db} from "./firebase/firebase";
 
 
 const FormComponent = styled.div`
