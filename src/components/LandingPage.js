@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import SlideControler from '../slides/SlideControler'
+import SlideController from '../slides/SlideController'
 import Home from './home/Home'
 function LandingPage() {
       // Slides State
@@ -11,7 +11,7 @@ function LandingPage() {
         <div>
             {
             areSliders ?
-            <SlideControler/>
+            <SlideController/>
             :
             <Home toggleSliders={toggleSliders}></Home>
   }

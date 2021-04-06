@@ -15,7 +15,8 @@ import Slide10 from './sections/Slide10'
 
 const SliderWrapper = styled.div`
 background: var(--background);
-height:100vh;
+background-size: 100vw 100vh;
+min-height:100vh;
 `
 const CenteringComponent = styled.div`
 height:100vh;
@@ -31,6 +32,7 @@ owerflow:hidden;
 
 function SlideControler() {
     const [section, setSection] = useState(1)
+
     useEffect(()=>{
         const scrollHandler = (e) =>{
             setTimeout(() => {
@@ -38,9 +40,8 @@ function SlideControler() {
                 if(scrollPosition > 0 && section < 10) { setSection(section  + 1)}
                 else if(scrollPosition < 0 && section > 1) { setSection(section - 1)}
                 //console.log(`scrollPosition: ${scrollPosition} , section: ${section}`)
-            }, 800);
+            }, 1000);
         }
-
         window.addEventListener('mousewheel', scrollHandler)
         return () => {
             window.removeEventListener('mousewheel', scrollHandler);

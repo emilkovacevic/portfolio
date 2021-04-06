@@ -34,16 +34,16 @@ function Slide2() {
             <motion.div style={{
                 boxShadow:"7px 6px 15px var(--text)" 
             }}
-            initial={{y:"50vh"}}
+            initial={{y:"-50vh"}}
             animate={{y: 0, transition:{duration:1}}}>
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 1}}}
-                >I am a self taught developer
+                >I am a front-end web developer
                 </Heading>
                 <Instruction
                  initial={{opacity: 0}}
-                 animate={{opacity: 1, transition:{duration: 4}}}
+                 animate={{opacity: 1, transition:{duration: 2}}}
                 >Keep on scrolling to continue with the slides...</Instruction>
                 </motion.div>
         </Component>

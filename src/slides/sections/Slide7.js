@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 const Component = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +18,9 @@ const Heading = styled(motion.p)`
   text-align: center;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--heading);
+  @media (max-width: 600px){
+    font-size: 1.8rem !important;
+  }
 `;
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -37,7 +39,7 @@ function Slide7() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 2 } }}
       >
-       However I should show you some of my personal projects
+       However I want to show you some of my personal projects
       </Heading>
       <ProjectsWrapper>
         <ProjectCard>

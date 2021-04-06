@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
+
+
 const Component = styled.div`
     p{
         margin:0.5em;
@@ -26,12 +28,13 @@ const Heading = styled(motion.p)`
 
 function Slide8() {
     return (
-        <Component>
+      <Component>
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
                 >Still, there is one thing missing...
                 </Heading>
+
         </Component>
     )
 }

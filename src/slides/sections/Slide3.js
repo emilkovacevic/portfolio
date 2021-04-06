@@ -3,24 +3,39 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 const Component = styled.div`
-    p{
-        margin:0.5em;
-    }
+font-size: 2.5rem !important;
+@media(max-width:600px){
+    font-size: 1.8rem !important;
+}
 `
 
 const Heading = styled(motion.p)`
     margin:auto;
     color:var(--heading);
-    font-size: 3rem;
+    font-size: inherit;
     font-weight:600;
-    margin: 1em;
+    margin: 0 1em;
     text-align:center;
     padding-bottom:1.5rem;
     border-bottom:2px solid var(--heading);
+    a{
+        color:var(--button);
+        :hover,:focus{ color:var(--links);}
+    }
+    @media(max-width:600px){
+            font-size: 1.8rem;
+            text-align:left;
+            padding-top:2em;
+    }
 `
 const Main = styled(motion.p)`
     color:var(--heading);
     font-size: 2rem;
+`
+
+const Aside = styled(motion.aside)`
+font-size: 1.5rem;
+color:var(--heading);
 `
 
 function Slide3() {
@@ -28,14 +43,22 @@ function Slide3() {
         <Component>
             <Heading
                 initial={{opacity: 0}}
-                animate={{opacity: 1, transition:{duration: 2}}}
-                >In 2020 I started learning web development
+                animate={{opacity: 1, transition:{duration: 1.5}}}
+                >In the summer of 2020 I started learning about web development from pure interest.
+                 I began with free online resources like <a href="https://www.freecodecamp.org/">freecodecamp</a> 
+                <span> and youtube coding videos.</span>
                 </Heading>
                 <Main
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
-                >One of the best decisions of my life
+                >I was hooked
                 </Main>
+                <div>
+                <Aside
+                initial={{opacity: 0}}
+                animate={{opacity: 1, transition:{duration: 2.25}}}
+                ><div>😄</div></Aside>
+                </div>
         </Component>
     )
 }

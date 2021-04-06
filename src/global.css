@@ -16,4 +16,7 @@
     --projects-text: #24343a;
     --card-background: #def2f1;
     --card-links__border: rgb(243, 243, 243, 0.8);
+
+    /* Slides  */
+    --errorBg__flash: #363636;
 }
