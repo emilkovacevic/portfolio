@@ -9,6 +9,8 @@ import {personal} from '../../data/data'
 import ContactForm from '../../components/contact/ContactForm'
 
 const Component = styled.div`
+  position:relative;
+  top:15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
