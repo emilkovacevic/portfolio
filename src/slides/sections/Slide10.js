@@ -24,7 +24,7 @@ const Component = styled.div`
   }
   i{
     font-size: 1.8rem;
-    margin:2em 1em;
+    margin:1em;
   }
   .links{
       display:flex;

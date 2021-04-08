@@ -112,7 +112,7 @@ export const projects = [
         index: 4,
         name:'Resorts',
         gitLink:'https://github.com/emilkovacevic/resort-website',
-        LiveLink:`./publicprojects/resortwebsite/index.html`,
+        LiveLink:`./publicprojects/resort/index.html`,
         image:{
             link:`${ResortIMG}`,
             alt: 'Resorts image'    
