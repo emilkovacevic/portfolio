@@ -15,7 +15,7 @@ const Component = styled.div`
     }
 `
 
-const Heading = styled(motion.p)`
+const Heading = styled(motion.div)`
     margin:auto;
     color:var(--heading);
     font-size: 3rem;
@@ -25,19 +25,21 @@ const Heading = styled(motion.p)`
     padding-bottom:0.5rem;
     article{
         text-align:left;
-        p{
-            font-size:0.5em;
+        width:600px;
+        @media (max-width: 1025px){
+            font-size:1.5rem;
         }
     }
 `
 
 
 function Slide9() {
-    const delay = 0.25;
+    
+    const flashDelay = 0.8;
     const [flash, setFlash] = useState(true)
   
     useEffect(() => {
-      let flashTimer = setTimeout(() => setFlash(false), delay * 1000);
+      let flashTimer = setTimeout(() => setFlash(false), flashDelay * 1000);
       return () => {
         clearTimeout(flashTimer);
       };
@@ -50,10 +52,24 @@ function Slide9() {
           :
             <Heading
                 initial={{opacity: 0}}
-                animate={{opacity: 1, transition:{duration: 2}}}
+                animate={{opacity: 1, transition:{duration: 1.5}}}
                 ><article>
-                    <p>..Err...? What was that ? </p><br></br>
-                    ...most important thing of them all...
+                    <motion.p
+                         initial={{opacity: 1, scale: 10, }}
+                         animate={{opacity: 0, scale:0, transition:{duration: 2}}}
+                         style={{
+                             textAlign:'center'
+                         }}
+                    >Err...? What was that?</motion.p>
+                    <motion.p className="main-message"
+                     initial={{opacity: 0, x:"120%", scale:1.25}}
+                     animate={{opacity: 1, x: 0, transition:{duration:5.5}}}
+                    >
+                       I want to say...
+                       <br/>the most important thi $ * ?
+                       <br/>
+                        ~ 32?FFF#a@ -9*s
+                        !-sdaa#fs</motion.p>
                 </article>
                 </Heading>
         }

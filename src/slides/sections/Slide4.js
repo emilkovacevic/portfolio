@@ -4,14 +4,25 @@ import {motion} from 'framer-motion'
 import CallToAction from './helpers/CallToAction'
 
 const Component = styled.div`
+padding:0 1em;
+margin:0;
     p{
         margin:0.5em;
+        padding:0 1em;
+        @media (max-width: 720px){
+          font-size:1.25rem;
+        }
     }
-    a{@media (max-width: 720px){
-      font-size:1rem;
+    a{
+      @media (max-width: 720px){
+      font-size:1.35rem;
+      padding:0;
     }
     span{
-      font-size:3em;
+      font-size:4rem;
+      @media (max-width: 720px){
+        font-size:2.25rem;
+      }
     }
   }
 `
@@ -25,6 +36,7 @@ const Heading = styled(motion.p)`
     text-align:center;
     padding-bottom:0.5rem;
     a{
+      font-size: 2rem !important;
       color:var(--button);
       :hover,:focus{
        color:var(--links);

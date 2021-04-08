@@ -15,7 +15,7 @@ const Heading = styled(motion.div)`
     font-weight:600;
     margin: 1em;
     padding-bottom:0.5rem;
-    text-align:justify;
+    text-align:left;
     @media (max-width: 600px){
         font-size: 1.8rem !important;
     }
@@ -28,20 +28,24 @@ function Slide5() {
     return (
         <Component>
             <Heading
-                initial={{opacity: 0}}
-                animate={{opacity: 1, transition:{duration: 2}}}
+                initial={{opacity: 0, scale:0}}
+                animate={{opacity: 1, scale:1, transition:{duration: 2}}}
                 >
+                    <p
+                    style={{margin:"0 0 0.5em 0"}}
+                    >I learned a lot following the courses.</p>
                     <ul>
                         <li>
-                            I learned a lot following their courses.
-                        </li>    
-                        <li>
-                            I went trought things like html and css.
+                            I went trought things like html and css,
                         </li>
                         <li>
-                            Using APIs and UI design,  
-                            making games with javascript.
-                            Using modern React with Firebase.
+                            Creating games with javascript,
+                        </li>
+                        <li>
+                            Using APIs and making UI design,
+                        </li>
+                        <li>
+                            Working with React and Firebase.
                         </li>
                     </ul>
                 </Heading>

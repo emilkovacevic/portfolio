@@ -32,7 +32,7 @@ function Slide8() {
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
-                >Still, there is one thing missing...
+                >But, the most important thing await and it ...
                 </Heading>
 
         </Component>

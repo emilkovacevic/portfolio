@@ -8,7 +8,6 @@ text-transform:uppercase;
 a{
     text-decoration:none;
     color:var(--headline);
-    background: var(--);
     background:var(--button);
     color: var(--background);
     padding:1rem;
@@ -19,6 +18,9 @@ a{
         color:var(--heading);
     }
 }
+@media (max-width: 720px){
+    font-size:1rem;
+  }
 `
 
 function CallToAction(props) {

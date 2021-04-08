@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import randomCodeImg from './randomCodeImg.jpg'
 
 const FlashWrapper = styled.div`
     position:absolute;
@@ -9,11 +10,18 @@ const FlashWrapper = styled.div`
     background:var(--errorBg__flash);
     top:0;
     left:0;
+    img{
+        height:100%;
+        width:100%;
+        object-fit:contain;
+    }
 `
 
 function ErrorFlash() {
     return (
-        <FlashWrapper />
+        <FlashWrapper>
+            <img src={randomCodeImg} alt='random code'></img>
+        </FlashWrapper>
     )
 }
 

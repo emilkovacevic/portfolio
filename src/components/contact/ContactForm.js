@@ -11,25 +11,68 @@ const FormComponent = styled.div`
   left: 0;
   bottom:0;
   right:0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   overflow-Y:scroll;
   z-index:999;
+  padding: 0.5em;
   button{
     cursor: pointer;
+    margin:1em;
   }
+  h3{
+    font-size:1.5rem;  
+  }
+  h5{
+    text-transform:uppercase;
+  }
+  input, textarea{
+    border:none;
+    padding:0.5em;
+    border-radius:5%;
+    outline: none;
+  }
+  button{
+    border:none;
+    background:var(--background);
+    i{
+      font-size:1.5rem;
+      background:var(--background);
+    }
+    :hover,:focus{
+      color:var(--text);
+      transform:rotateZ(45deg);
+    }
   }
 `;
 
 const Container = styled.div`
   background: var(--background);
   padding: 2em;
+  min-width:30vw;
+  display:block;
+  box-sizing:border-box;
+  margin:0;
   form {
     display: flex;
     flex-flow: column wrap;
+  }
+  @media (max-width: 1025px){
+    min-width:100%;
+    height:100%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+  }
+  @media (max-width: 450px){
+    min-width:100%;
   }
 `;
 
@@ -52,7 +95,7 @@ const Main = styled.div`
     margin-bottom: 0.5em;
   }
   button {
-    margin: 1em 0 0 0;
+    margin: 1em 0;
     padding: 1em 0;
     :hover, :focus{
       background:var(--text);
@@ -153,11 +196,11 @@ function Form({ onClick }) {
       {!sendSuccess ? 
       <Container>
         <Header>
-          <h3>Contact Form</h3>
-          <button onClick={handleClick}>close</button>
+          <h3>Get In Touch</h3>
+          <button onClick={handleClick}><i className="fas fa-times"></i></button>
         </Header>
         <Main>
-          <h5>Thank you for reaching out, please fill the form.</h5>
+          <h5>Thank you for reaching out, <br/>please fill the form.</h5>
           <form className="form" onSubmit={handleSubmit}>
           <label>Name<span className="required">*</span></label>
       <input

@@ -36,6 +36,10 @@ export const personal = {
         link: 'https://www.linkedin.com/in/emil-kovacevic-2893aa54/'
     },
 
+    mail:{
+        link: 'emil.kovacevic.dev@gmail.com'
+    },
+
     aside:{
         mainHeading: 'Have a look at my Curriculum Vitae',
         main: 'Summary of my where I have been and what I am doing now.',

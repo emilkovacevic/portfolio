@@ -3,15 +3,14 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 const Component = styled.div`
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
     p{
         margin:0.5em;
         text-shadow: 0px 0px 1px var(--text);
     }
+    @media (max-width: 1025px){
+        .instruction{
+            display:none;
+        }
 `
 
 const Heading = styled(motion.p)`
@@ -23,6 +22,9 @@ const Heading = styled(motion.p)`
     text-align:center;
     padding-bottom:0.5rem;
     border-bottom:2px solid var(--heading);
+    @media (max-width: 1025px){
+        border:none;
+    }
 `
 const Instruction = styled(motion.p)`
 padding-bottom:1em;
@@ -38,10 +40,16 @@ function Slide2() {
             animate={{y: 0, transition:{duration:1}}}>
             <Heading
                 initial={{opacity: 0}}
-                animate={{opacity: 1, transition:{duration: 1}}}
+                animate={{opacity: 1, x:[30,0,-20,0], transition:{duration: 1}}}
+                drag 
+                dragTransition={{ bounceStiffness: 600, bounceDamping: 200 }}
+                dragConstraints={{ left: 0, right:0, bottom: 0, top:0 }}
+                whileHover={{
+                    cursor: 'grabbing',
+                    }}
                 >I am a front-end web developer
                 </Heading>
-                <Instruction
+                <Instruction className="instruction"
                  initial={{opacity: 0}}
                  animate={{opacity: 1, transition:{duration: 2}}}
                 >Keep on scrolling to continue with the slides...</Instruction>

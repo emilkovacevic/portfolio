@@ -1,5 +1,6 @@
-import React, {useState, useEffect}  from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+
 
 import Slide1 from './sections/Slide1'
 import Slide2 from './sections/Slide2'
@@ -17,6 +18,7 @@ const SliderWrapper = styled.div`
 background: var(--background);
 background-size: 100vw 100vh;
 min-height:100vh;
+overflow:hidden !important;
 `
 const CenteringComponent = styled.div`
 height:100vh;
@@ -27,38 +29,55 @@ flex-direction:column;
 justify-content: center;
 align-items: center;
 text-align:center;
-owerflow:hidden;
+`
+const SliderBtns = styled.div`
+    visibility: hidden;
+    @media (max-width:1025px) {
+        visibility: visible;
+        display:flex;
+        position:fixed;
+        bottom:0;
+        width:100%;
+        justify-content:space-between;
+        button{
+            margin:10px 20px;;
+            padding: 10px;
+            cursor:pointer;
+        }
+    }
+
 `
 
-function SlideControler() {
+const SlideControler = () => {
+    const nextSliderDelay = 7
     const [section, setSection] = useState(1)
 
-    useEffect(()=>{
-        const scrollHandler = (e) =>{
+    useEffect(() => {
+        const scrollHandler = (e) => {
             setTimeout(() => {
                 let scrollPosition = Math.floor(e.deltaY)
-                if(scrollPosition > 0 && section < 10) { setSection(section  + 1)}
-                else if(scrollPosition < 0 && section > 1) { setSection(section - 1)}
-                //console.log(`scrollPosition: ${scrollPosition} , section: ${section}`)
+                if (scrollPosition > 0 && section < 10) { setSection(section + 1) }
+                else if (scrollPosition < 0 && section > 1) { setSection(section - 1) }
             }, 1000);
         }
-        window.addEventListener('mousewheel', scrollHandler)
+         window.addEventListener('mousewheel', scrollHandler)
         return () => {
             window.removeEventListener('mousewheel', scrollHandler);
         };
-    },[section])
+    }, [section])
 
-    useEffect(()=>{
-        const keyHandler = (e) =>{
+
+    useEffect(() => {
+        const keyHandler = (e) => {
             const key = e.keyCode
             switch (key) {
                 case 38:
-                    if(section > 1){
+                    if (section > 1) {
                         setSection(section - 1)
                     }
                     break;
                 case 40:
-                    if (section < 10){
+                    if (section < 10) {
                         setSection(section + 1)
                     }
                     break;
@@ -70,26 +89,48 @@ function SlideControler() {
         return () => {
             window.removeEventListener('keyup', keyHandler);
         };
-    },[section])
-
-    function handleClick(){
-        if(section < 10){
-            setSection(section + 1)
-        }
+    }, [section])
+    
+    const revertSlidesBtn = (e) => {
+        e.preventDefault()
+        if(section === 1) return null
+        setSection(section - 1)
     }
+
+    const continueSlidesBtn = (e) => {
+        e.preventDefault()
+        if(section === 9) return null
+        setSection(section + 1)
+    }
+
+    useEffect(() => {
+        section === 9 && setTimeout(() => {
+            setSection(section + 1)
+        }, nextSliderDelay * 1000);
+        return () => {
+            clearTimeout()
+        }
+    }, [section])
+
+
+
     return (
-        <SliderWrapper onTouchMove={handleClick}>
+        <SliderWrapper >
             <CenteringComponent>
                 {section === 1 && <Slide1 />}
                 {section === 2 && <Slide2 />}
                 {section === 3 && <Slide3 />}
                 {section === 4 && <Slide4 />}
                 {section === 5 && <Slide5 />}
-                {section === 6 && <Slide6 />}
+                {section === 6 && <Slide6 continueSlidesBtn={continueSlidesBtn} />}
                 {section === 7 && <Slide7 />}
                 {section === 8 && <Slide8 />}
                 {section === 9 && <Slide9 />}
-                {section === 10 && <Slide10 />}
+                {section === 10 && <Slide10/>}
+            <SliderBtns>
+                {section === 1 ? <div/>: <button onClick={revertSlidesBtn}><i className="fa fa-backward" aria-hidden="true"></i></button>}
+                {section === 10 ? <div/> : <button onClick={continueSlidesBtn}><i className="fa fa-forward" aria-hidden="true"></i></button>}
+            </SliderBtns>
             </CenteringComponent>
         </SliderWrapper>
     )

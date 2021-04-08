@@ -9,15 +9,24 @@ import netflixJokerImg from '../../data/projects/Netflix/NetflixJoker.JPG'
 import netflixBrowse from '../../data/projects/Netflix/NetflixBrowse.JPG'
 
 const Component = styled.div`
-    min-height:100vh;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
+
     p{
         margin:0.5em;
     }
+    button{
+        margin:1em;
+        cursor:pointer;
+    }
+    .continue-btn{
+        font-size:20px;
+        border:none;
+        background:var(--background);
+        text-transform: uppercase;
+        text-decoration:underline;
+        color: var(--text);
+        opacity:0.8;
+    }
+    
     @media (max-width: 600px){
     position:relative;
     top:250px;
@@ -32,7 +41,6 @@ const Component = styled.div`
 `
 
 const Heading = styled(motion.p)`
-    margin:auto;
     color:var(--heading);
     font-size: 3rem;
     font-weight:600;
@@ -55,13 +63,9 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 max-width:1200px;
-button{
-    margin:1em;
-    cursor:pointer;
-}
 img{
     height:200px;
-    width:200px;
+    width:100px;
     min-width:200px
     min-height:200px;
     min-width:200px;
@@ -83,7 +87,7 @@ p{
 }
 `
 
-function Slide5() {
+function Slide5({continueSlidesBtn}) {
 
     const [imageOpen, setImageOpen] = useState(false)
     const [image, setImage] = useState(null)
@@ -97,21 +101,21 @@ function Slide5() {
     return (
         <>
         { imageOpen ? 
-        <OpenImage imgUrl={image} btnClick={handleClick} />
+        <OpenImage imgUrl={image} handleClick={handleClick} />
         :
         <Component>
             <Heading
                 initial={{opacity: 0, y: "-50vh"}}
-                animate={{opacity: 1, y:0, transition:{duration: 2}}}
+                animate={{opacity: 1, y:0, transition:{duration: 1.5}}}
                 >With one of the coding tutorials I even made a Netflix clone.
                 <br/>
                 </Heading>
                 <Main
                 initial={{y: "50vh"}}
-                animate={{y: 0, transition:{duration: 2}}}>
+                animate={{y: 0, transition:{duration: 1.5}}}>
                     <Content
                     initial={{opacity: 0}}
-                    animate={{opacity: 1, transition:{duration: 2.5}}}
+                    animate={{opacity: 1, transition:{duration: 2}}}
                     >
                         <button onClick={handleClick}><img src={netflixImg} alt="netflix login"></img></button>
                         <button onClick={handleClick}><img src={netflixJokerImg} alt="netflix play"></img></button>
@@ -120,6 +124,29 @@ function Slide5() {
                     <Footer>
                         <p className='emphasis'>This project was made using firebase, react, styled-components, fuse.js, react-router </p>
                         <p>As this is not a solely done project, but a part of a coding tutorial I decided not to include a demo or source code.</p>
+                        <motion.button 
+                        whileHover={{
+                            scale:1.1,
+                            color: "var(--text)",
+                            opacity:1
+                        }}
+                        onClick={continueSlidesBtn} className="continue-btn">continue onwards
+                        </motion.button>
+                    <motion.div 
+                    animate={{
+                        scale: [1.5, 1.5, 2.5, 2.5, 1.5],
+                        y:[20, 0, 20]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        loop: Infinity,
+                        repeatDelay: 1
+                      }}
+                    >
+                    <i className="fas fa-hand-pointer" aria-hidden="true"></i>
+                    </motion.div>             
                     </Footer>
                 </Main>
         </Component>

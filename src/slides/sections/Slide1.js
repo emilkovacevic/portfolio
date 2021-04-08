@@ -23,6 +23,10 @@ h2{
 p{
     text-shadow: 0px 0px 1px var(--text);
 }
+@media (max-width: 1025px){
+    .instruction{
+        display:none;
+    }
 `
 
 function Slide1() {
@@ -38,7 +42,7 @@ function Slide1() {
             <motion.div
                     drag 
                     dragTransition={{ bounceStiffness: 400, bounceDamping: 100 }}
-                    dragConstraints={{ left: 50, right:50, bottom: 50, top:50 }}
+                    dragConstraints={{ left: 5, right:5, bottom: 5, top:5 }}
                     whileHover={{
                         cursor: 'grabbing',
                         }}
@@ -47,7 +51,7 @@ function Slide1() {
                 <motion.h1
                 whileTap={{ scale: 0.98 }}
                 >My name is {personal.name} <ReadName></ReadName></motion.h1>
-                <p>Scroll down to continue...</p>
+                <p className="instruction">Scroll down to continue...</p>
             </motion.div>
             </motion.section>
         </Wrapper>
