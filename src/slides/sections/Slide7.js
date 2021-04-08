@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
+import {projects} from '../../data/data'
+
 const Component = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,12 +25,30 @@ const Heading = styled(motion.p)`
   }
 `;
 const ProjectsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
 `;
 
 const ProjectCard = styled.div`
   margin: 1em;
+  display:flex;
+  flex-direction:column;
+  :hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    border: 1px solid var(--text);
+  }
+  img{
+    object-fit:cover;
+    width:150px;
+    height:150px;
+  }
+  div{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
 `;
 
 function Slide7() {
@@ -39,26 +59,21 @@ function Slide7() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 2 } }}
       >
-       However I want to show you some of my personal projects
+       However, I want to show you some of my personal projects
       </Heading>
       <ProjectsWrapper>
-        <ProjectCard>
-          <motion.div
-            style={{
-              width: "90vw",
-              padding: "2em",
-              display: "flex",
-              flexWrap: "wrap",
-              placeItems: "center",
-              placeContent: "space-evenly",
-              borderRadius: 10,
-              backgroundColor: "var(--heading)",
-              perspective: 1000,
-            }}
-
-          >
-          </motion.div>
-        </ProjectCard>
+        {projects.map((card, index) => 
+          
+          <ProjectCard key={index}          >
+            <h3>{card.name}</h3>
+            <img src={card.image.link} alt={card.image.alt}/>
+            <div>
+              <a href={card.LiveLink}>Live</a>
+              <a href={card.gitLink}>Git</a>
+            </div>
+          </ProjectCard>
+          
+          )}
       </ProjectsWrapper>
     </Component>
   );

@@ -129,7 +129,7 @@ const Description = styled.span`
     border-top: none;
     display:block;
     margin: 0.5em 2rem;
-    padding: 0;
+    padding:2em 0;
     text-align:center;
   }
 `;

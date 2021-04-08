@@ -9,7 +9,14 @@ import netflixJokerImg from '../../data/projects/Netflix/NetflixJoker.JPG'
 import netflixBrowse from '../../data/projects/Netflix/NetflixBrowse.JPG'
 
 const Component = styled.div`
-
+    display:block;
+    position:relative;
+    left:0;
+    right:0;
+    top:120px;
+    bottom:0;
+    min-height:100vh;
+    overflow-Y:auto;
     p{
         margin:0.5em;
     }
@@ -28,15 +35,14 @@ const Component = styled.div`
     }
     
     @media (max-width: 600px){
-    position:relative;
-    top:250px;
+    top:110px;
+    padding-bottom:20px;
     }
     @media (max-width: 400px){
-    top:350px;
-    font-size:12px;
-    *{
         font-size:12px;
-    }
+        *{
+            font-size:12px;
+        }
     }
 `
 
@@ -84,6 +90,8 @@ p{
 }
 @media (max-width: 600px){
     font-size: 1.8rem !important;
+    padding: 0 0 200px 0;
+    
 }
 `
 

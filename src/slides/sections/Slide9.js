@@ -30,6 +30,14 @@ const Heading = styled(motion.div)`
             font-size:1.5rem;
         }
     }
+    .main-message{
+        @media (max-width:600px){
+            font-size:1.25rem;
+            margin:1em auto;
+            max-width:650px;
+            width:80vw;
+        }
+    }
 `
 
 
@@ -53,23 +61,29 @@ function Slide9() {
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 1.5}}}
-                ><article>
+                ><article
+                style={{
+                    position:"absolute",
+                    height:"100vh",
+                    width:"100vw",
+                    top:0,
+                    left:0,
+                    display:"flex",
+                    flexDirection:"column",
+                    justifyContent:"center",
+                    alignItems:"center"
+                    }}>
                     <motion.p
                          initial={{opacity: 1, scale: 10, }}
-                         animate={{opacity: 0, scale:0, transition:{duration: 2}}}
-                         style={{
-                             textAlign:'center'
-                         }}
+                         animate={{opacity: 0, scale:0, transition:{duration: 2.8}}}
                     >Err...? What was that?</motion.p>
                     <motion.p className="main-message"
-                     initial={{opacity: 0, x:"120%", scale:1.25}}
-                     animate={{opacity: 1, x: 0, transition:{duration:5.5}}}
+                     initial={{opacity: 0, x:"1050px", scale:1.25}}
+                     animate={{opacity: 1, x: "0", transition:{duration:5.5}}}
                     >
-                       I want to say...
-                       <br/>the most important thi $ * ?
-                       <br/>
-                        ~ 32?FFF#a@ -9*s
-                        !-sdaa#fs</motion.p>
+                       I want to say...the most important  <br/>this.$ * ?
+                        Failed to load resource: net::ERR_BLOCKED_BY_CREATOR
+                      </motion.p>
                 </article>
                 </Heading>
         }

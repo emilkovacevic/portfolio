@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {motion} from 'framer-motion'
 
 import { Component, Header, Body, Main, Aside } from "./aboutStyles";
 import { personal} from "../../data/data";
@@ -37,22 +38,57 @@ function About() {
               <h2>
                 <Link to="cv">{personal.aside.mainHeading}</Link>
               </h2>
+              <hr/>
             </header>
             <p>{personal.aside.main}</p>
             <footer>
-              <a href="./data/Resume.pdf" class="button" download>Download</a>
+              <motion.a href="./data/Resume.pdf" class="button" download
+              style={{
+                display:"flex",
+                border: "1px solid var(--text)",
+                padding:'0.5em 1em',
+                background: "var(--heading)",
+                color:"var(--background)",
+                justifyContent:"center"
+              }}
+              whileHover={{color:"var(--heading)", background:"var(--background)"}}
+              >Download</motion.a>
+              <p 
+              style={{
+                textAlign:"center"
+              }}>or</p>
+              <Link to="cv"               
+              style={{
+                display:"flex",
+                border: "1px solid var(--text)",
+                padding:'0.5em 1em',
+                background: "var(--heading)",
+                color:"var(--background)",
+                justifyContent:"center"
+              }}>Open</Link>
             </footer>
+              <br/>
           </section>
-          <hr></hr>
           <section>
           <div>
+            <hr/>
             <h2>{personal.aside.other.heading}</h2>
             {personal.aside.other.intrests.map((intrest, index) => (
               <div key={index}>
-                <div>
-                  <img src={intrest.image.src} alt={intrest.image.alt} className='intrest-image' />
-                  <h4>{intrest.heading}</h4>
-                  <p>{intrest.paragraph}</p>
+                <div
+                style={{
+                  display:'grid',
+                  gridTemplateColumns: "1fr 1fr",
+                }}>
+                 <div>
+                    <img src={intrest.image.src} alt={intrest.image.alt} className='interest-image' />
+                 </div>
+                  <div
+                  style={{marginLeft:"1em"}}
+                  >
+                      <h2>{intrest.heading}</h2>
+                      <p>{intrest.paragraph}</p>
+                  </div>
                 </div>
               </div>
             ))}

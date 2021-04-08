@@ -128,7 +128,7 @@ const SlideControler = () => {
                 {section === 9 && <Slide9 />}
                 {section === 10 && <Slide10/>}
             <SliderBtns>
-                {section === 1 ? <div/>: <button onClick={revertSlidesBtn}><i className="fa fa-backward" aria-hidden="true"></i></button>}
+                {section === 1 && section !== 10  ? <div/>: <button onClick={revertSlidesBtn}><i className="fa fa-backward" aria-hidden="true"></i></button>}
                 {section === 10 ? <div/> : <button onClick={continueSlidesBtn}><i className="fa fa-forward" aria-hidden="true"></i></button>}
             </SliderBtns>
             </CenteringComponent>

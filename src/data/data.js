@@ -14,17 +14,17 @@ export const personal = {
     name: 'Emil Kovačević',
 
     heading:'Summary of me',
-    introduction: 'I am a tehnology enthusiast focusing on website development. People find me to be a self motivated team player with excellent communication skills. I enjoy learning new skills and I have a huge drive to spend the time and face programming problems. At the moment I am looking for a developer position at an IT company. If you.\'re it, please shoot me an email.',
+    introduction: 'I am a  technology enthusiast, focusing on website development. People find me to be a self motivated team player with excellent communication skills. I enjoy learning new skills and I have a huge drive to spend the time and face programming problems. At the moment I am looking for a developer position at an IT company. If you are one, please shoot me an email.',
     
     aboutHeading:'Yes, that\'s me at the picture',
     aboutIMG: `${ProfilePic}`,
-    aboutMe: 'I have some knowlage of photo editing in Photoshop and I am familiar with Figma. As for my tehnical knowlage I would firstly mention and thank SCRIMBA.COM for teaching me the basics of front end development. From basic HTML all the way to modern React. I recommend the platform to anyone looking to enter the web development field in a constructive and "hands on" maner. Supported by an awesome community.',
+    aboutMe: 'I have some knowledge of photo editing in Photoshop and I am familiar with Figma. As for my technical knowledge I would firstly mention and thank SCRIMBA.COM for teaching me the basics of front end development. From basic HTML all the way to modern React. I recommend the platform to anyone looking to enter the web development field in a constructive and hands on manner. Supported by an awesome community.',
     
     intrestHeading: 'What I am looking for?',
-    intrest: 'As a fresh web developer I am looking to grow my knowlage and work with an team of developers on team projects.',
+    intrest: 'As a fresh web developer, I am looking to grow in a better, more experienced developer by collaborating with a team on dev related tasks.',
     
-    techList:'html, css, javascript, react, express, nodeJs, MongoDB Atlas, heroku and firebase ',
-    skillHeading: 'I have experoance with the things listed below',
+    skillHeading: 'I have familiarity with the stack listed under',
+    techList:' CSS, JavaScript, React, Express, Node.js, MongoDB Atlas, Heroku and Firebase',
     message:'If you are looking for a web developer feel free to contact me.',
 
     github: {
@@ -45,7 +45,7 @@ export const personal = {
         main: 'Summary of my where I have been and what I am doing now.',
 
         other:{
-            heading: 'Things I find Intresting',
+            heading: 'Things I find interesting',
             intrests: [
                 {
                     heading: 'Web Development',
@@ -65,7 +65,7 @@ export const personal = {
                 },
                 {
                     heading: 'Business',
-                    paragraph: 'Expanding knowlage on how to do good business. Learning about marketing and branding strategies I find really cool.',
+                    paragraph: 'Expanding on how doing good business. Learning about marketing and branding strategies I find really interesting.',
                     image:{
                         src: `${Business}`,
                         alt: '',

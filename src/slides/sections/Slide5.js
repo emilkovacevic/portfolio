@@ -36,13 +36,13 @@ function Slide5() {
                     >I learned a lot following the courses.</p>
                     <ul>
                         <li>
-                            I went trought things like html and css,
+                            I went trough things like HTML and CSS,
                         </li>
                         <li>
-                            Creating games with javascript,
+                            Creating games with JavaSript,
                         </li>
                         <li>
-                            Using APIs and making UI design,
+                            Using APIs and making UI designs,
                         </li>
                         <li>
                             Working with React and Firebase.

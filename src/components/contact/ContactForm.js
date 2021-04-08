@@ -31,8 +31,8 @@ const FormComponent = styled.div`
   }
   input, textarea{
     border:none;
-    padding:0.5em;
-    border-radius:5%;
+    padding:1em;
+    border-radius:10px;
     outline: none;
   }
   button{
@@ -79,8 +79,9 @@ const Container = styled.div`
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em;
+  align-items:center;
 `;
+
 const Main = styled.div`
   margin: 0 1em;
   padding: 1em 0;
@@ -97,8 +98,12 @@ const Main = styled.div`
   button {
     margin: 1em 0;
     padding: 1em 0;
+    font-weight:800;
+    letter-spacing:8px;
+    text-transform:uppercase;
     :hover, :focus{
       background:var(--text);
+      color:var(--background);
       transform:scale(1.023)
     }
   }
@@ -192,7 +197,6 @@ function Form({ onClick }) {
 
   return (
     <FormComponent>
-
       {!sendSuccess ? 
       <Container>
         <Header>
@@ -230,7 +234,7 @@ function Form({ onClick }) {
   
       <button
         type="submit"
-        style={{ background: loader ? "#ccc" : "white" }}
+        style={{ background: loader ? "var(--background)" : "var(--heading)" }}
       >
         {loader ?<div> <h5>Sending Data</h5> <span>Please Wait<span className="dot">.</span><span className="dot">.</span><span className="dot">.</span></span></div> : <span>Submit</span>}
       </button>

@@ -44,14 +44,15 @@ function Slide3() {
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 1.5}}}
-                >In the summer of 2020 I started learning about web development from pure interest.
-                 I began with free online resources like <a href="https://www.freecodecamp.org/">freecodecamp</a> 
-                <span> and youtube coding videos.</span>
+                >In the summer of 2020 I started learning web development.
+                <br/>
+                 I began with free online resources like <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freecodecamp</a> 
+                <span> and YouTube coding videos.</span>
                 </Heading>
                 <Main
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
-                >I was hooked
+                >I was hooked - pun intended
                 </Main>
                 <div>
                 <Aside

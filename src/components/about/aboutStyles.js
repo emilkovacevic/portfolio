@@ -53,18 +53,20 @@ export const Header = styled.div`
   max-width: var(--app-max-width);
 `;
 export const Body = styled.div`
-  display: flex;
+  display: grid;
   justify-content:center;
+  grid-template-columns:2fr 1fr;
   max-width: var(--app-max-width);
   margin: auto;
-  @media (max-width: 600px){
-    flex-wrap:wrap;
+  @media (max-width: 1024px){
+    grid-template-columns:1fr;
   }
 `;
 export const Main = styled.div`
   margin: 1em;
   min-width:200px;
 `;
+
 export const Aside = styled.div`
   margin: 1em;
   min-width:150px;
@@ -77,5 +79,15 @@ export const Aside = styled.div`
     object-fit:cover;
     padding:0 1em;
   }
-
+  div{
+    margin:5px 0;
+  }
+  img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    @media (max-width:1200px){
+      object-fit:fill;
+    }
+  }
 `;

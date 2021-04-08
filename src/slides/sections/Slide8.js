@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
@@ -27,14 +27,37 @@ const Heading = styled(motion.p)`
 `
 
 function Slide8() {
+
+  const [animation, setAnimation] = useState(true)
+
+  useEffect(() => {
+    const loadingAnimation = setTimeout(() => {
+      setAnimation(false)
+    }, 3800);
+    return () => {
+      clearTimeout(loadingAnimation)
+    }
+  }, [])
+
     return (
       <Component>
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 2}}}
-                >But, the most important thing await and it ...
+                >But, the most important thing is...
                 </Heading>
 
+                {animation ?
+                <br style={{fontSize:"1.5rem", padding:0, margin:0}}/>
+                :
+
+                <div
+                style={{fontSize:"1.5rem", opacity: "0.8", padding:0, margin:0}
+                }
+                > 
+                Please, continue scrolling</div>
+                
+                }
         </Component>
     )
 }
