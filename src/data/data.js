@@ -83,6 +83,7 @@ export const projects = [
         name:'Portfolio',
         gitLink:'https://github.com/emilkovacevic/portfolio',
         LiveLink:'https://emilkovacevic.com/',
+        tech: 'javascript, react, react-router-dom, framer-motion, styled-components, firebase',
         image:{
             link:`${PortfolioIMG}`,
             alt: 'Porfolio image'    
@@ -93,6 +94,7 @@ export const projects = [
         name:'Films',
         gitLink:'https://github.com/emilkovacevic/Fiml-Database---scrimba-weekly-challanges-',
         LiveLink:'./publicprojects/films/index.html',
+        tech: 'javaScript, json, css, html',
         image:{
             link:`${FilmsImg}`,
             alt: 'FilmsSite image'    
@@ -103,6 +105,7 @@ export const projects = [
         name:'Bomberman',
         gitLink:'https://github.com/emilkovacevic/bomberman-js-game',
         LiveLink:`./publicprojects/bomberman/bomberman.html`,
+        tech: 'javaScript, css',
         image:{
             link:`${BombermanIMG}`,
             alt: 'Bomberman image'    
@@ -113,6 +116,7 @@ export const projects = [
         name:'Resorts',
         gitLink:'https://github.com/emilkovacevic/resort-website',
         LiveLink:`./publicprojects/resort/index.html`,
+        tech: 'javaScript, bootstrap, css, html',
         image:{
             link:`${ResortIMG}`,
             alt: 'Resorts image'    

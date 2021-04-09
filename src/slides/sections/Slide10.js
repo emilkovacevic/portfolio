@@ -21,13 +21,25 @@ const Component = styled.div`
   button{
       font-size:2rem;
       cursor:pointer;
+      
+    :hover, :focus{
+        color: var(--heading);
+        transform:scale(1.25);
+        color:blue;
+      }
   }
   a{
       margin:0 1em;
   }
-  i{
+  h5, i{
     font-size: 1.8rem;
-    margin:1em;
+    margin: 0.5em 1em ;
+    a{
+        color:var(--links);
+        :hover, focus{
+            color: var(--heading);
+        }
+    }
   }
   p{
     padding-top:1.5em;
@@ -42,10 +54,6 @@ const Component = styled.div`
           display:block;
           color: var(--text);
           text-decoration:none;
-          :hover, :focus{
-            color: var(--heading);
-            font-weight:600;
-          }
       }
   }
   .routes{
@@ -54,6 +62,14 @@ const Component = styled.div`
       flex-direction:row;
       justify-self:center;
       align-self:center;
+      margin:16px 0;
+      a,div,i{
+        :hover, :focus{
+            color: var(--heading);
+            transform:scale(1.25);
+            color:blue;
+          }
+      }
   }
   @media (max-width: 1025px){
         padding-bottom:2em;
@@ -61,9 +77,6 @@ const Component = styled.div`
         display:flex;
         align-items:center;
 
-    }
-    @media (max-width:720px){
-        *{font-size:16px}
     }
 `;
 
@@ -116,13 +129,16 @@ function Slide10() {
                 </div>
                 <div className='routes'>
                    <Link to='/projects' target="_blank" rel="noreferrer"><i className="fas fa-hammer"></i>Projects</Link>
-                   <Link to='/about' target="_blank" rel="noreferrer"><i className="fas fa-user"></i>Learn More</Link>
+                   <Link to='/about' target="_blank" rel="noreferrer"><i className="fas fa-user"></i>About Me</Link>
                    <Link to='/cv' target="_blank" rel="noreferrer"><i className="far fa-file"></i>CV</Link>
                </div>
                </div>
            </div>
            {form && <ContactForm onClick={setForm}></ContactForm>}
-           <p>This website was made with React:<a href="https://github.com/emilkovacevic/portfolio" target="_blank" rel="noreferrer">Source Code</a></p>
+           <h5>The website source code:<a href="https://github.com/emilkovacevic/portfolio" target="_blank" rel="noreferrer">#Code</a></h5>
+           <p>*The error event was an intentional design choice*</p>
+           <br/>
+           <a href="http://emilkovacevic.com/">reset</a>
         </Component>
         }
         </>

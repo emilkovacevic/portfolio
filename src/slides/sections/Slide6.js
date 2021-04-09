@@ -9,19 +9,20 @@ import netflixJokerImg from '../../data/projects/Netflix/NetflixJoker.JPG'
 import netflixBrowse from '../../data/projects/Netflix/NetflixBrowse.JPG'
 
 const Component = styled.div`
+    max-width: var(--app-max-width);
+    margin:0 auto;
     display:block;
-    position:relative;
+    position:absolute;
     left:0;
     right:0;
     top:120px;
     bottom:0;
     min-height:100vh;
-    overflow-Y:auto;
     p{
         margin:0.5em;
     }
     button{
-        margin:1em;
+        margin:0;
         cursor:pointer;
     }
     .continue-btn{
@@ -65,19 +66,17 @@ const Heading = styled(motion.p)`
 const Main = styled(motion.div)``
 
 const Content = styled(motion.div)`
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-max-width:1200px;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+gap: 10px;
 img{
     height:200px;
-    width:100px;
-    min-width:200px
-    min-height:200px;
-    min-width:200px;
-    max-width:600px;
-    margin:1em;
-    object-fit:cover;
+    width:100%;
+    object-fit:fill;
+    .hand, .hand *{
+        max-width:100px;
+        overflow:hidden;
+    }
 }
 `
 const Footer = styled.div`
@@ -144,14 +143,15 @@ function Slide5({continueSlidesBtn}) {
                     animate={{
                         scale: [1.5, 1.5, 2.5, 2.5, 1.5],
                         y:[20, 0, 20]
-                      }}
-                      transition={{
+                    }}
+                    transition={{
                         duration: 2,
                         ease: "easeOut",
                         times: [0, 0.2, 0.5, 0.8, 1],
                         loop: Infinity,
                         repeatDelay: 1
-                      }}
+                    }}
+                    className="hand"
                     >
                     <i className="fas fa-hand-pointer" aria-hidden="true"></i>
                     </motion.div>             

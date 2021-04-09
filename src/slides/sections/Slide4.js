@@ -52,7 +52,7 @@ function Slide5() {
                 initial={{opacity: 0, x:"-50vw"}}
                 animate={{opacity: 1,x:"0", transition:{duration: 2}}}
                 >
-                In December I enrolled an online learning program.<br/>
+                In December of 2020 I enrolled an online learning program.<br/>
                 </Heading>
                 <CallToAction>
                   <a href='https://scrimba.com/learn/frontend' target="_blank" rel="noreferrer">The Frontend Developer Career Path.</a>

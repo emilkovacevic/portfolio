@@ -19,18 +19,18 @@ function ReadName() {
 
     const [play] = useSound(
         mysound,
-        { volume: 1}
+        { volume: 1 }
     );
 
-    const onClickPlay = () =>{
-            play()
+    const onClickPlay = () => {
+        play()
     }
 
     return (
         <Button onClick={onClickPlay} >
-        <span>
-            <i className="fas fa-volume-up"></i>    
-        </span>
+            <span>
+                <i className="fas fa-volume-up"></i>
+            </span>
         </Button>
 
     )

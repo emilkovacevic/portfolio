@@ -5,6 +5,7 @@ import ErrorFlash from './helpers/ErrorFlash'
 
 
 const Component = styled.div`
+    overflow:hidden;
     height:100vh;
     display:flex;
     flex-direction:column;
@@ -43,7 +44,7 @@ const Heading = styled(motion.div)`
 
 function Slide9() {
     
-    const flashDelay = 0.8;
+    const flashDelay = 1.5;
     const [flash, setFlash] = useState(true)
   
     useEffect(() => {
@@ -75,11 +76,11 @@ function Slide9() {
                     }}>
                     <motion.p
                          initial={{opacity: 1, scale: 10, }}
-                         animate={{opacity: 0, scale:0, transition:{duration: 2.8}}}
+                         animate={{opacity: 0, scale:0, transition:{duration: 3.8}}}
                     >Err...? What was that?</motion.p>
                     <motion.p className="main-message"
                      initial={{opacity: 0, x:"1050px", scale:1.25}}
-                     animate={{opacity: 1, x: "0", transition:{duration:5.5}}}
+                     animate={{opacity: 1, x: "0", transition:{duration:8.5}}}
                     >
                        I want to say...the most important  <br/>this.$ * ?
                         Failed to load resource: net::ERR_BLOCKED_BY_CREATOR

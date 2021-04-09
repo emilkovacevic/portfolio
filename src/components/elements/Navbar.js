@@ -27,7 +27,6 @@ const ToggleButton = styled.div`
     width: 10%;
   }
 `;
-
 const NavItems = styled.div`
   background: var(--background);
   min-width: 100vw;
@@ -77,7 +76,6 @@ const NavItems = styled.div`
     }
   }
 `;
-
 const ExternalLinks = styled.div`
   border-left: 2px solid var(--text);
   @media (max-width: 400px) {
@@ -88,7 +86,6 @@ const ExternalLinks = styled.div`
     *{margin: 0 1em;}
   }
 `;
-
 const NavLink = styled(Link)`
   display: flex;
   flex-direction: column;
@@ -147,13 +144,13 @@ function Navbar({ name, handleClick, isVisible }) {
             <i className="fas fa-home"></i>
           ) : (
             <i className="fas fa-address-card"></i>
-            )}
+          )}
         </span>
       </ToggleButton>
       <NavItems isVisible={isVisible}>
         <Name>
           <NavLink to="/">
-              <h4 onClick={handleClick}>{name}</h4>
+            <h4 onClick={handleClick}>{name}</h4>
           </NavLink>
           <Description> web developer portfolio</Description>
         </Name>

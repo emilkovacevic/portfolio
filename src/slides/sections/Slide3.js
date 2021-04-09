@@ -44,9 +44,9 @@ function Slide3() {
             <Heading
                 initial={{opacity: 0}}
                 animate={{opacity: 1, transition:{duration: 1.5}}}
-                >In the summer of 2020 I started learning web development.
+                >In the beggining I was learning web development on my own.
                 <br/>
-                 I began with free online resources like <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freecodecamp</a> 
+                 I used free online resources like <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freecodecamp</a> 
                 <span> and YouTube coding videos.</span>
                 </Heading>
                 <Main

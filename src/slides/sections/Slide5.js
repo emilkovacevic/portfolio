@@ -36,7 +36,7 @@ function Slide5() {
                     >I learned a lot following the courses.</p>
                     <ul>
                         <li>
-                            I went trough things like HTML and CSS,
+                            They included things like HTML and CSS,
                         </li>
                         <li>
                             Creating games with JavaSript,

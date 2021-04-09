@@ -33,7 +33,7 @@ function Slide8() {
   useEffect(() => {
     const loadingAnimation = setTimeout(() => {
       setAnimation(false)
-    }, 3800);
+    }, 3000);
     return () => {
       clearTimeout(loadingAnimation)
     }
