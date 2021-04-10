@@ -4,8 +4,8 @@ import {motion} from 'framer-motion'
 
 const Component = styled.div`
 font-size: 2.5rem !important;
-@media(max-width:600px){
-    font-size: 1.8rem !important;
+@media(max-width:1024px){
+    font-size: 1.5rem !important;
 }
 `
 

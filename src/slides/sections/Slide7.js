@@ -22,8 +22,8 @@ const Heading = styled(motion.p)`
   text-align: center;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--heading);
-  @media (max-width: 600px){
-    font-size: 1.8rem !important;
+  @media (max-width: 1024px){
+    font-size: 1.5rem;
   }
 `;
 const ProjectsWrapper = styled.div`
@@ -86,6 +86,10 @@ const ProjectCard = styled.div`
     padding:0;
     margin:0  0.5em 10px 0.5rem;
     text-align: left;
+  }
+  @media (max-width: 1024px){
+    display:block;
+    position:relative;
   }
 `;
 

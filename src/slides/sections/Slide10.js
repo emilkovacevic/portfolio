@@ -71,13 +71,14 @@ const Component = styled.div`
           }
       }
   }
-  @media (max-width: 1025px){
-        padding-bottom:2em;
-        padding-top:10px;
-        display:flex;
-        align-items:center;
-
-    }
+  @media (max-width: 1024px){
+    display:block;
+    position:relative;
+    padding-bottom:2em;
+    padding-top:100px;
+    display:flex;
+    align-items:center;
+}
 `;
 
 const ErrorWrapper = styled(motion.div)``
@@ -111,6 +112,7 @@ function Slide10() {
         <Component>
             <h2>Oh No!</h2>
             <h2>Something went wrong :(</h2>
+            <p>Looks like you can contact me</p>
             <br/>
             <br/>
             <button onClick={handleForm}>Contact Me</button>

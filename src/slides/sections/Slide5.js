@@ -11,13 +11,13 @@ const Component = styled.div`
 const Heading = styled(motion.div)`
     margin:auto;
     color:var(--heading);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight:600;
     margin: 1em;
     padding-bottom:0.5rem;
     text-align:left;
-    @media (max-width: 600px){
-        font-size: 1.8rem !important;
+    @media (max-width: 1024px){
+        font-size: 1.5rem !important;
     }
     @media (max-width: 320px){
         font-size: 1.2rem !important;

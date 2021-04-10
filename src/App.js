@@ -13,8 +13,11 @@ import My404Component from './components/404/My404Component'
 
 const AppContainer = styled.div`
   margin:auto;
+
 `
+
 function App() {
+
   // NAVBAR STATE FOR TOGGLE MENU
   const [isVisible, setVisible] = useState(false)
   const handleClick = () =>{

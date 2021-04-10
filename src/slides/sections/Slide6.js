@@ -49,13 +49,13 @@ const Component = styled.div`
 
 const Heading = styled(motion.p)`
     color:var(--heading);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight:600;
     margin: 1em;
     text-align:center;
     padding-bottom:0.5rem;
     border-bottom:2px solid var(--heading);
-    @media (max-width: 600px){
+    @media (max-width: 1024px){
         font-size: 1.8rem !important;
     }
     @media (max-width: 400px){
@@ -83,7 +83,7 @@ p{
     font-size:1.5rem;
     width:100%;
 }
-@media (max-width: 600px){
+@media (max-width: 1024px){
     font-size: 1.8rem !important;
     padding: 0 0 200px 0;
     
