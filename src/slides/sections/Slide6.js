@@ -73,10 +73,6 @@ img{
     height:200px;
     width:100%;
     object-fit:fill;
-    .hand, .hand *{
-        max-width:100px;
-        overflow:hidden;
-    }
 }
 `
 const Footer = styled.div`
@@ -139,10 +135,12 @@ function Slide5({continueSlidesBtn}) {
                         }}
                         onClick={continueSlidesBtn} className="continue-btn">continue onwards
                         </motion.button>
-                    <motion.div 
-                    animate={{
+                    <div>
+                    <motion.i
+                     animate={{
                         scale: [1.5, 1.5, 2.5, 2.5, 1.5],
                         y:[20, 0, 20]
+                        
                     }}
                     transition={{
                         duration: 2,
@@ -151,10 +149,8 @@ function Slide5({continueSlidesBtn}) {
                         loop: Infinity,
                         repeatDelay: 1
                     }}
-                    className="hand"
-                    >
-                    <i className="fas fa-hand-pointer" aria-hidden="true"></i>
-                    </motion.div>             
+                    className="fas fa-hand-pointer" aria-hidden="true"></motion.i>
+                    </div>             
                     </Footer>
                 </Main>
         </Component>

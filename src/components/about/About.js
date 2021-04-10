@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion'
 
-import { Component, Header, Body, Main, Aside } from "./aboutStyles";
+import { Component, BackToHome, Header, Body, Main, Aside } from "./aboutStyles";
 import { personal} from "../../data/data";
 
 function About() {
   return (
     <Component>
+        <BackToHome href="https://www.emilkovacevic.com" ><i className="fas fa-home"></i></BackToHome>
       <Header>
         <h1>{personal.name}</h1>
       </Header>
@@ -42,7 +43,7 @@ function About() {
             </header>
             <p>{personal.aside.main}</p>
             <footer>
-              <motion.a href="./data/Resume.pdf" class="button" download
+              <motion.a href="./data/Emil_Kovacevic-Resume.pdf" class="button" download
               style={{
                 display:"flex",
                 border: "1px solid var(--text)",

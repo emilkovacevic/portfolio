@@ -13,7 +13,7 @@ import ProfilePic from './images/profilePic.png'
 export const personal = {
     name: 'Emil Kovačević',
 
-    heading:'Summary of me',
+    heading:'Summary',
     introduction: 'I am a  technology enthusiast, focusing on website development. People find me to be a self motivated team player with excellent communication skills. I enjoy learning new skills and I have a huge drive to spend the time and face programming problems. At the moment I am looking for a developer position at an IT company. If you are one, please shoot me an email.',
     
     aboutHeading:'Yes, that\'s me at the picture',
@@ -52,7 +52,7 @@ export const personal = {
                     paragraph: 'Creating dynamic statefull websites and applications using modern standards.',
                     image:{
                         src: `${WebImg}`,
-                        alt: 'web',
+                        alt: 'web development',
                     },
                 },
                 {
@@ -104,7 +104,7 @@ export const projects = [
         index: 3,
         name:'Bomberman',
         gitLink:'https://github.com/emilkovacevic/bomberman-js-game',
-        LiveLink:`./publicprojects/bomberman/bomberman.html`,
+        LiveLink:'./publicprojects/bomberman/bomberman.html',
         tech: 'javaScript, css',
         image:{
             link:`${BombermanIMG}`,
@@ -115,7 +115,7 @@ export const projects = [
         index: 4,
         name:'Resorts',
         gitLink:'https://github.com/emilkovacevic/resort-website',
-        LiveLink:`./publicprojects/resort/index.html`,
+        LiveLink:'./publicprojects/resort/index.html',
         tech: 'javaScript, bootstrap, css, html',
         image:{
             link:`${ResortIMG}`,

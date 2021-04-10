@@ -109,9 +109,11 @@ function Slide7() {
               <h3>{card.name}</h3>
               <div className="card-content__info">
                 <h4>Project stack: </h4>
+                <br/>
                 <p className="card-content__info">
                     {card.tech} 
                 </p>
+                <br/>
               </div>
               <div className="card-links">
                 <motion.a

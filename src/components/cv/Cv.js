@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Document from '../../data/Resume.pdf'
+import Document from '../../data/Emil_Kovacevic-Resume.pdf'
 
 const Component = styled.div`
     padding-top:5rem;
