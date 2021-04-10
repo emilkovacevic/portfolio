@@ -93,7 +93,7 @@ export const projects = [
         index: 2,
         name:'Films',
         gitLink:'https://github.com/emilkovacevic/Fiml-Database---scrimba-weekly-challanges-',
-        LiveLink:'./publicprojects/films/index.html',
+        LiveLink:'./publicprojects/websites/films/index.html',
         tech: 'javaScript, json, css, html',
         image:{
             link:`${FilmsImg}`,
@@ -115,7 +115,7 @@ export const projects = [
         index: 4,
         name:'Resorts',
         gitLink:'https://github.com/emilkovacevic/resort-website',
-        LiveLink:'./publicprojects/resort/index.html',
+        LiveLink:'./publicprojects/websites/resort/index.html',
         tech: 'javaScript, bootstrap, css, html',
         image:{
             link:`${ResortIMG}`,
