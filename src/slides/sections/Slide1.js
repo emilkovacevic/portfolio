@@ -24,6 +24,9 @@ p{
     text-shadow: 0px 0px 1px var(--text);
 }
 @media (max-width: 1025px){
+    div{
+        font-size:1.2rem;
+    }
     .instruction{
         display:none;
     }

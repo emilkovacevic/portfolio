@@ -1,16 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-
 import {projects} from '../../data/data'
 
 const Component = styled.div`
 padding: 10em 0;
-
 @media(max-width:768px){
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 `;
 
@@ -33,8 +31,8 @@ grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 justify-content: center;
 margin:1em;
 height:100%;
-@media (max-width: 600px){
-  padding:  0 0 10px 0;
+@media (max-width: 720px){
+  padding:  0 0 100px 0;
 }
 `;
 
@@ -60,11 +58,11 @@ const ProjectCard = styled.div`
     justify-content:space-between;
     box-sizing:border-box;
     h3{
-      text-align:left;
+      text-align:center;
       text-transform:uppercase;
       text-decoration: underline;
       margin-left: 0.5em;
-      margin-bottom: 0;
+      margin-bottom: 0.5em;
       font-size:1.4rem;
     }
   }
@@ -83,9 +81,9 @@ const ProjectCard = styled.div`
     text-decoration: none;
   }
   .card-content__info{
-    padding:0;
+    padding:1em 0;
     margin:0  0.5em 10px 0.5rem;
-    text-align: left;
+    text-align: center;
   }
   @media (max-width: 1024px){
     display:block;
@@ -111,6 +109,7 @@ function Slide7() {
             </div>
             <div className="card-content">
               <h3>{card.name}</h3>
+              <br/>
               <div className="card-content__info">
                 <h4>Project stack: </h4>
                 <br/>

@@ -78,6 +78,14 @@ const Component = styled.div`
     padding-top:100px;
     display:flex;
     align-items:center;
+    i{
+        font-size:0.8rem;
+    }
+    @media (max-height: 800px){
+        top:50px;
+        overflow:scroll;
+        position:absolute;
+    }
 }
 `;
 
@@ -111,8 +119,8 @@ function Slide10() {
         :
         <Component>
             <h2>Oh No!</h2>
-            <h2>Something went wrong :(</h2>
-            <p>Looks like you can contact me</p>
+            <h2>Looks like the presentation is over :(</h2>
+            <p>You can contact me</p>
             <br/>
             <br/>
             <button onClick={handleForm}>Contact Me</button>
@@ -137,7 +145,7 @@ function Slide10() {
                </div>
            </div>
            {form && <ContactForm onClick={setForm}></ContactForm>}
-           <h5>The website source code:<a href="https://github.com/emilkovacevic/portfolio" target="_blank" rel="noreferrer">#Code</a></h5>
+           <h5>The website source code =<a href="https://github.com/emilkovacevic/portfolio" target="_blank" rel="noreferrer">#Code</a></h5>
            <p>*The error event was an intentional design choice*</p>
            <br/>
            <a href="http://emilkovacevic.com/">reset</a>

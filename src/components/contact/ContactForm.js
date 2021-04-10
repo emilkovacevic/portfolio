@@ -19,6 +19,7 @@ const FormComponent = styled.div`
   overflow-Y:scroll;
   z-index:999;
   padding: 0.5em;
+  text-align:left;
   button{
     cursor: pointer;
     margin:1em;

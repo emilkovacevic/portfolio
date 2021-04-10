@@ -33,6 +33,16 @@ const Tags = styled.div`
             content:'';
         }
     }
+    @media (max-height: 600px){
+      position:absolute;
+      top:10em;
+      *{
+        font-size:1rem;
+        :before, :after{
+          content:'';
+      }
+      }
+    }
 `
 const Wrapper = styled.div`
   line-height: 1.4;
