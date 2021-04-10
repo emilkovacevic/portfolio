@@ -115,7 +115,7 @@ export const projects = [
         index: 4,
         name:'Resorts',
         gitLink:'https://github.com/emilkovacevic/resort-website',
-        LiveLink:'./publicprojects/websites/resort/index.html',
+        LiveLink:'./publicprojects/websites/resorts/index.html',
         tech: 'javaScript, bootstrap, css, html',
         image:{
             link:`${ResortIMG}`,

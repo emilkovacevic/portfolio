@@ -1,0 +1,93 @@
+{"website": {
+      "cards": [
+        {
+            "title": "hotel",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"4",
+            "beds": "3",
+            "roomService" : "yes",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel1.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$210/night"
+        },
+        {
+            "title": "hotel 2",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"4",
+            "beds": "6",
+            "roomService" : "yes",
+            "swimmingpool":"yes",
+            "image":"./data/hotels/hotel2.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$280/night"
+        },
+        {
+            "title": "hotel 3",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"2",
+            "beds": "2",
+            "roomService" : "yes",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel3.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$70/night"
+        },
+        {
+            "title": "hotel 4",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"3",
+            "beds": "3",
+            "roomService" : "no",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel4.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$60/night"
+        },
+        {
+            "title": "hotel 5",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"4",
+            "beds": "6",
+            "roomService" : "yes",
+            "swimmingpool":"yes",
+            "image":"./data/hotels/hotel5.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$350/night"
+        },
+        {
+            "title": "hotel 6",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"4",
+            "beds": "6",
+            "roomService" : "yes",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel6.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$210/night"
+        },
+        {
+            "title": "hotel 7",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"4",
+            "beds": "4",
+            "roomService" : "no",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel7.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$110/night"
+        },
+        {
+            "title": "hotel 8",
+            "text": "Some quick example text to build on the card title and make up the bulk of the card'scontent.",
+            "rooms":"2",
+            "beds": "2",
+            "roomService" : "yes",
+            "swimmingpool":"no",
+            "image":"./data/hotels/hotel8.jpg",
+            "imageAlt": "imageAlt",
+            "suitePrice": "$90/night"
+        }
+      ]
+    }
+}

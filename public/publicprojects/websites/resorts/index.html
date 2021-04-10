@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!--  font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./style/style.css">
+  <title>resort website</title>
+</head>
+
+<body>
+  <button id="scroll-to-top-btn">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Resort website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style='color:black !important;'>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- xxx NAVBAR xxx-->
+  <!-- JUMBOTRON-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./data/images/banner.jpg" class="d-block w-100" alt="resort villas with palms">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./data/images/banner2.jpg" class="d-block w-100" alt="resort in woods with pond">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./data/images/banner3.jpg" class="d-block w-100" alt="resort on the beach">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- xxx JUMBOTRON xxx -->
+  <!-- main content-->
+  <div class="main-content">
+    <main>
+      <div class="wrapper">
+        <p class="h1 text-center">A short Introducton</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Alias sit molestiae eum eos ipsum deleniti, dolor hic ratione?
+          Suscipit mollitia quas eos ipsam reprehenderit excepturi provident
+          aspernatur reiciendis officiis aliquid.
+        </p>
+
+      </div>
+      <div class="wrapper">
+        <hr>
+      </div>
+      <div class="wrapper">
+        <img src="./data//images/main-content-1.jpg" class="img-thumbnail unded mx-auto d-block img-width" alt="map">
+        <p class="h2">Where to go</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Doloribus minima repudiandae eos, esse fugit
+          veritatis totam quasi sapiente accusantium natus earum
+          inventore sed distinctio ipsum expedita quis voluptas
+          illum quia?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ipsum sequi, rem tempore reiciendis labore corrupti est harum repudiandae.
+          Nihil error corrupti unde aliquid praesentium excepturi magnam aperiam,
+          eveniet assumenda fuga?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Cupiditate laboriosam incidunt quibusdam molestias rem repudiandae
+          qui ad quasi voluptatum fugiat ex at est alias officiis vitae,
+          porro unde placeat sunt!</p>
+      </div>
+      <div class="wrapper">
+        <hr>
+      </div>
+      <div class="wrapper">
+        <h4 class="h4 text-center">Recomended Destinations</h4>
+      </div>
+      <div id="cards-container" class="wrapper cards-container">
+        <!-- CARDS Rerender WITH JS-->
+        <div class="wrapper spinners">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item"><button onclick="page1()" class="page-link">1</button></li>
+            <li class="page-item"><button onclick="page2()" class="page-link">2</button></li>
+            <li class="page-item"><button onclick="page3()" class="page-link">3</button></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrapper">
+        <hr>
+      </div>
+      <div class="wrapper">
+        <h4 class="h4 text-center">Another headline</h4>
+        <div class="block-wrapper">
+          <div class="block">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates
+              soluta doloribus hic harum eum alias officia
+              fuga, dolorum qui, maxime delectus culpa in debitis unde possimus excepturi
+              magni architecto?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore velit quidem provident assumenda officia tenetur nam quas nesciunt vero necessitatibus
+              suscipit, vel, incidunt consequuntur nisi, repellendus doloremque
+              obcaecati reiciendis fuga!</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <hr>
+      </div>
+      <div class="wrapper">
+        <h4 class="h4 text-center">Testimonials</h4>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-testimonial" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./data//images/testimonials-bg1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./data/images/testimonials-bg2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./data/images/testimonials-bg3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- xxx main content xxx -->
+
+  <!-- Footer-->
+  <footer class="footer-distributed">
+    <div class="wrapper">
+      <div class="footer-left">
+        <h3>Resorts</h3>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">Resorts © 2021</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fas fa-map-marker"></i>
+          <p><span>551 S. Street</span> Berlin, Germany</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+893 901 239 0321</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:emil.kovacevic.dev@gmail.com">emil.kovacevic.dev@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+          vehicula sit amet.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/emil-kovacevic-2893aa54/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- xxx Footer xxx -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
