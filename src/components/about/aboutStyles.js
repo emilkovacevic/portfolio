@@ -45,14 +45,6 @@ export const Component = styled.div`
 
 `;
 
-export const BackToHome = styled.a`
-  position:relative;
-  left:0.6em;
-  top:2em;
-  font-size:2rem;
-
-`
-
 export const Header = styled.div`
   display: flex;
   flex-wrap: wrap;

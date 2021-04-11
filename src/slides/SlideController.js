@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-
+import {motion} from 'framer-motion'
 
 import Slide1 from './sections/Slide1'
 import Slide2 from './sections/Slide2'
@@ -48,6 +48,15 @@ const SliderBtns = styled.div`
     }
 
 `
+const SliderBtn = styled(motion.div)`
+    button{
+        border:none;
+        background:inherit;
+        font-size:1.2rem;
+        outline: none;
+    }
+`
+
 
 const SlideControler = () => {
     const nextSliderDelay = 7
@@ -132,8 +141,8 @@ const SlideControler = () => {
                 {section === 9 && <Slide9 />}
                 {section === 10 && <Slide10/>}
             <SliderBtns>
-                {section === 1 && section !== 10  ? <div/>: <button onClick={revertSlidesBtn}><i className="fa fa-backward" aria-hidden="true"></i></button>}
-                {section === 10 ? <div/> : <button onClick={continueSlidesBtn}><i className="fa fa-forward" aria-hidden="true"></i></button>}
+                {section === 1 || section === 10 ? <div/> : <SliderBtn whileHover={{scale: 1.25, transition:{delay:0.5}}}><button onClick={revertSlidesBtn}><i className="fa fa-backward" aria-hidden="true"></i></button></SliderBtn>}
+                {section === 10 ? <div/> : <SliderBtn whileHover={{scale: 1.25, transition:{delay:0.5}}}><button onClick={continueSlidesBtn}><i className="fa fa-forward" aria-hidden="true"></i></button></SliderBtn>}
             </SliderBtns>
             </CenteringComponent>
         </SliderWrapper>

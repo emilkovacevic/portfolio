@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Component, BackToHome, Header, Body, Main, Aside } from "./aboutStyles";
+import { Component, Header, Body, Main, Aside } from "./aboutStyles";
 import { personal} from "../../data/data";
 
 function About() {
   return (
     <Component>
-        <BackToHome href="https://www.emilkovacevic.com" ><i className="fas fa-home"></i></BackToHome>
       <Header>
         <h1>{personal.name}</h1>
       </Header>
