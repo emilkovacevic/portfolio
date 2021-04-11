@@ -58,6 +58,12 @@ const NavItems = styled.div`
   a:hover {
     color: var(--heading);
   }
+  @media (max-width: 720px) {
+    i{
+      font-size:1.25rem;
+      margin: 0 1em;
+    }
+  }
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
     text-align: center;

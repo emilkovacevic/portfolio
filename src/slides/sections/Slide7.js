@@ -4,8 +4,8 @@ import {motion} from 'framer-motion'
 import {projects} from '../../data/data'
 
 const Component = styled.div`
-padding: 10em 0;
-@media(max-width:768px){
+padding: 15% 0;
+@media(max-width:1280px){
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 100px 0;
@@ -24,126 +24,140 @@ const Heading = styled(motion.p)`
     font-size: 1.5rem;
   }
 `;
+
 const ProjectsWrapper = styled.div`
+max-width:1280px;
+margin:auto;
+background:var(--card-background);
 display: grid;
-grid-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-justify-content: center;
-margin:1em;
-height:100%;
-@media (max-width: 720px){
-  padding:  0 0 100px 0;
+  
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-gap: 20px;
+
+@media (min-width: 30em) {
+  grid-template-columns: 1fr 1fr;
 }
+
+@media (min-width: 60em) {
+  grid-template-columns: repeat(4, 1fr);
+}
+`
+
+const Card = styled.div`
+  margin:1em;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:space-evenly;
+  box-shadow: 2px 2px 2px 3px gray;
 `;
 
-const ProjectCard = styled.div`
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  border: 1px solid var(--text);
-  box-shadow: 1px 4px 10px 2px var(--text);
-  border-radius:1rem 0 1rem 0;
+const CardImage = styled(motion.div)`
+  height:200px;
+  border-bottom:1px solid gray;
   img{
     width:100%;
-    border-radius:18px 0 0 8px;
     height:100%;
-    min-height:150px;
     object-fit:cover;
-    border-right: 1px solid var(--text);
   }
-  .card-content{
-    margin: 20% 0;
-    min-width:60%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    box-sizing:border-box;
-    h3{
-      text-align:center;
-      text-transform:uppercase;
-      text-decoration: underline;
-      margin-left: 0.5em;
-      margin-bottom: 0.5em;
-      font-size:1.4rem;
-    }
-  }
-  .card-links{
-    display:flex;
-    justify-content:space-evenly;
-    justify-self: end;
-    margin:0 1rem;
-  }
-  .link{
-    background:var(--button);
-    color: var(--links);
-    padding: 5px 16px;
-    margin: 0 5px;
-    border-radius:1rem 1rem;
-    text-decoration: none;
-  }
-  .card-content__info{
-    padding:1em 0;
-    margin:0  0.5em 10px 0.5rem;
-    text-align: center;
-  }
-  @media (max-width: 1024px){
-    display:block;
-    position:relative;
-  }
-`;
+`
 
-function Slide7() {
+const CardContent = styled.div`
+margin:1em 0;
+`
+
+const CardLinks = styled.div`
+margin:1em 0;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+a{
+  margin:1em;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:blue;
+  font-weight:600;
+}
+`
+const ContinueBtn = styled.div`
+margin-top:1em;
+text-align:center;
+button{
+  cursor:pointer;
+  background:var(--link);
+  border:none;
+  border-bottom:1px solid var(--text);
+  text-transform: uppercase;
+}
+`
+
+function Slide7({continueSlidesBtn}) {
   return (
     <Component>
       <Heading
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 2 } }}
+        animate={{ opacity: 1, transition: { duration: 1.5 } }}
       >
        However, I want to show you some of my personal projects
       </Heading>
       <ProjectsWrapper>
         {projects.map((card, index) => 
-          
-          <ProjectCard key={index}>
-            <div>
-              <img src={card.image.link} alt={card.image.alt}/>
-            </div>
-            <div className="card-content">
-              <h3>{card.name}</h3>
-              <br/>
-              <div className="card-content__info">
-                <h4>Project stack: </h4>
+          <Card key={index}>
+            <h3>{card.name}</h3>
+            <CardImage
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 1 }
+              }}>
+              <a 
+              href={card.LiveLink} target="_blank" rel="noreferrer"><img src={card.image.link} alt={card.name}></img></a>
+            </CardImage>
+            <CardContent>
+              <h4>Project stack</h4>
+              <p>{card.tech}</p>
+            </CardContent>
+            <CardLinks>
+              <motion.div
+               whileHover={{
+                scale: 1.25,
+                transition: { duration: 1 }
+              }}
+              >
+                <a href={card.LiveLink} target="_blank" rel="noreferrer"><i className="fas fa-cog"></i> Demo</a></motion.div>
                 <br/>
-                <p className="card-content__info">
-                    {card.tech} 
-                </p>
-                <br/>
-              </div>
-              <div className="card-links">
-                <motion.a
-                whileHover={{
-                  color:"var(--button-hover)",
-                  scale:1.2,
-                  background: "var(--errorBg__flash)",
-                }}
-                href={card.LiveLink} target="_blank" rel="noreferrer"
-                className="link"
-                >Live Demo</motion.a>
-                <motion.a 
-                whileHover={{
-                  color:"var(--button-hover)",
-                  background: "var(--errorBg__flash)",
-                  scale:1.2
-                }}
-                href={card.gitLink} target="_blank" rel="noreferrer"
-                className="link"
-                
-                >Github Code</motion.a>
-              </div>
-            </div>
-          </ProjectCard>
-          
-          )}
+                <motion.div
+               whileHover={{
+                scale: 1.25,
+                transition: { duration: 1 },
+              }}
+              >
+                <a href={card.gitLink} target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i> Code</a></motion.div>
+            </CardLinks>
+          </Card>
+        )
+        }
       </ProjectsWrapper>
+      <ContinueBtn>
+        <motion.div
+         animate={{ scale: [1, 2, 2, 1, 1]}}
+         transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          loop: Infinity,
+          repeatDelay: 1
+        }}
+        whileHover={{
+          scale: 2,
+          transition: { duration: 1 }
+        }}
+        >
+        <button onClick={continueSlidesBtn}>next slide</button>
+        </motion.div>  
+        </ContinueBtn>
     </Component>
   );
 }

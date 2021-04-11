@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {motion} from 'framer-motion'
 
 import { Component, BackToHome, Header, Body, Main, Aside } from "./aboutStyles";
 import { personal} from "../../data/data";
@@ -43,21 +42,6 @@ function About() {
             </header>
             <p>{personal.aside.main}</p>
             <footer>
-              <motion.a href="./data/Emil_Kovacevic-Resume.pdf" class="button" download
-              style={{
-                display:"flex",
-                border: "1px solid var(--text)",
-                padding:'0.5em 1em',
-                background: "var(--heading)",
-                color:"var(--background)",
-                justifyContent:"center"
-              }}
-              whileHover={{color:"var(--heading)", background:"var(--background)"}}
-              >Download</motion.a>
-              <p 
-              style={{
-                textAlign:"center"
-              }}>or</p>
               <Link to="cv"               
               style={{
                 display:"flex",

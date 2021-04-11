@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* HOT FIX!! NAV TRANSITION ON SCROLL */
+/* HOT FIX!! NAV TRANSITION ON resize */
 .navbar{
   background-color: var(--background);
   border-bottom: 1px solid var(--text);
@@ -33,15 +33,13 @@ body {
   }
   .navbar{
     border-bottom: none;
-    background: rgba(0, 0, 0, 0.4);
+    background:#99bbb9;
     box-shadow: 0px 2px 3px var(--text);
   }
   .navbar i, .navbar button{
-    font-size: 16px ;
-    padding:4px;
+    font-size: 18px ;
     margin:0;
     box-shadow: none;
     border: none;
-    background:none;
   }
 }

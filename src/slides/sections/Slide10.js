@@ -120,7 +120,7 @@ function Slide10() {
         <Component>
             <h2>Oh No!</h2>
             <h2>Looks like the presentation is over :(</h2>
-            <p>You can contact me</p>
+            <p>But there are some buttons below to explore</p>
             <br/>
             <br/>
             <button onClick={handleForm}>Contact Me</button>
@@ -138,9 +138,9 @@ function Slide10() {
                    <a href={"mailto:" + personal.mail.link} target="_blank" rel="noreferrer"><div> <i className="fas fa-envelope-open-text"/>E-mail </div></a>
                 </div>
                 <div className='routes'>
-                   <Link to='/projects' target="_blank" rel="noreferrer"><i className="fas fa-hammer"></i>Projects</Link>
-                   <Link to='/about' target="_blank" rel="noreferrer"><i className="fas fa-user"></i>About Me</Link>
-                   <Link to='/cv' target="_blank" rel="noreferrer"><i className="far fa-file"></i>CV</Link>
+                   <Link to='/projects'><i className="fas fa-hammer"></i>Projects</Link>
+                   <Link to='/about'><i className="fas fa-user"></i>About Me</Link>
+                   <Link to='/cv'><i className="far fa-file"></i>CV</Link>
                </div>
                </div>
            </div>

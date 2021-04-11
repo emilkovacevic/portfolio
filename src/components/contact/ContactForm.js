@@ -48,6 +48,9 @@ const FormComponent = styled.div`
       transform:rotateZ(45deg);
     }
   }
+  @media (max-width:765px){
+    padding:0 0.5em;
+  }
 `;
 
 const Container = styled.div`

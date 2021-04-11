@@ -24,6 +24,7 @@ const CenteringComponent = styled.div`
 height:100vh;
 max-width:1200px;
 margin:auto;
+paddign-top:15%;
 display:flex;
 flex-direction:column;
 justify-content: center;
@@ -59,6 +60,9 @@ const SlideControler = () => {
                 if (scrollPosition > 0 && section < 10) { setSection(section + 1) }
                 else if (scrollPosition < 0 && section > 1) { setSection(section - 1) }
             }, 1000);
+        }
+        if(section === 6 || section === 7 || section === 10){
+        return  window.removeEventListener('mousewheel', scrollHandler);
         }
          window.addEventListener('mousewheel', scrollHandler)
         return () => {
@@ -123,7 +127,7 @@ const SlideControler = () => {
                 {section === 4 && <Slide4 />}
                 {section === 5 && <Slide5 />}
                 {section === 6 && <Slide6 continueSlidesBtn={continueSlidesBtn} />}
-                {section === 7 && <Slide7 />}
+                {section === 7 && <Slide7 continueSlidesBtn={continueSlidesBtn}/>}
                 {section === 8 && <Slide8 />}
                 {section === 9 && <Slide9 />}
                 {section === 10 && <Slide10/>}
