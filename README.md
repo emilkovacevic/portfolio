@@ -27,7 +27,7 @@ dependencies I used:
    * "use-sound": "^2.0.1",
 
 
-### How to run Localy
+### How to run locally
 1. clone or download zip file
 2. open in code editor
 3. use npm install - to Install dependencies
