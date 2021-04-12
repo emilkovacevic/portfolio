@@ -20,7 +20,6 @@ scroll wheel works in chrome browsers for now, There are some css absolute and o
 
 
 dependencies I used:
-      "@hookform/resolvers": "^2.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
