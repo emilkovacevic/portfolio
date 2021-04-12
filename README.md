@@ -9,30 +9,28 @@ This is a slideshow based website,
 It contains an about page, contact form, pdf reader page, about me page, projects page, a site nav menu and a menu with links to websites I am on.
 
 --- The slides are controled with on click events with buttons, 
-scroll wheel works in chrome browsers for now, There are some css absolute and overflow issues on Mozilla I think as event listeners arent fired correctly.
+scroll wheel works in chrome browsers for now, There are some css absolute and overflow issues on Mozilla. I think it makes event listeners to not fire correctly.
 
 
---- Css was done with styled components and animation with framer motion 
-
---- Icons are imported from font-awesome
-
---- For the form backed I used Firebase
+* Css was done with styled components and animation with framer motion 
+* Icons are imported from font-awesome
+* For the form backed I used Firebase
 
 
 dependencies I used:
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "firebase": "^8.3.2",
-    "framer-motion": "^3.10.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-motion": "^0.5.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "styled-components": "^5.2.1",
-    "use-sound": "^2.0.1",
-    "web-vitals": "^1.0.1"
+   * "@testing-library/jest-dom": "^5.11.4",
+   * "@testing-library/react": "^11.1.0",
+   * "@testing-library/user-event": "^12.1.10",
+   * "firebase": "^8.3.2",
+   * "framer-motion": "^3.10.0",
+   * "react": "^17.0.1",
+   *  "react-dom": "^17.0.1",
+   * "react-motion": "^0.5.2",
+   * "react-router-dom": "^5.2.0",
+   * "react-scripts": "4.0.3",
+   * "styled-components": "^5.2.1",
+   * "use-sound": "^2.0.1",
+   * "web-vitals": "^1.0.1"
 
 
 ### How to run Localy
