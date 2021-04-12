@@ -55,7 +55,7 @@ function Slide8() {
                 style={{fontSize:"1.5rem", opacity: "0.8", padding:0, margin:0}
                 }
                 > 
-                Please, continue scrolling</div>
+                ...on the next slide</div>
                 
                 }
         </Component>

@@ -27,9 +27,6 @@ p{
     div{
         font-size:1.2rem;
     }
-    .instruction{
-        display:none;
-    }
 `
 
 function Slide1() {
@@ -53,8 +50,8 @@ function Slide1() {
                 <h2>Hello,</h2>
                 <motion.h1
                 whileTap={{ scale: 0.98 }}
-                >My name is {personal.name} <ReadName></ReadName></motion.h1>
-                <p className="instruction">Scroll down to continue...</p>
+                >My name is {personal.name} <ReadName/></motion.h1>
+                <p className="instruction">Click next to continue...</p>
             </motion.div>
             </motion.section>
         </Wrapper>

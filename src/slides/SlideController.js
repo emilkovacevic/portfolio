@@ -32,28 +32,27 @@ align-items: center;
 text-align:center;
 `
 const SliderBtns = styled.div`
-    visibility: hidden;
-    @media (max-width:1025px) {
+max-width:1280px;
+margin:0 auto;
         visibility: visible;
         display:flex;
         position:fixed;
         bottom:0;
         width:100%;
         justify-content:space-between;
-        button{
-            margin:10px 20px;;
-            padding: 10px;
-            cursor:pointer;
-        }
-    }
-
 `
 const SliderBtn = styled(motion.div)`
     button{
         border:none;
         background:inherit;
-        font-size:1.2rem;
         outline: none;
+        margin:10px 20px;;
+        padding: 10px;
+        cursor:pointer;        
+        font-size:2.5rem;
+        media(max-width: 960px){
+            font-size:1.8rem;
+        }
     }
 `
 
@@ -73,7 +72,7 @@ const SlideControler = () => {
         if(section === 6 || section === 7 || section === 10){
         return  window.removeEventListener('mousewheel', scrollHandler);
         }
-         window.addEventListener('mousewheel', scrollHandler)
+        window.addEventListener('mousewheel', scrollHandler)
         return () => {
             window.removeEventListener('mousewheel', scrollHandler);
         };
