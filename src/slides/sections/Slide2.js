@@ -52,7 +52,7 @@ function Slide2() {
                 <Instruction className="instruction"
                  initial={{opacity: 0}}
                  animate={{opacity: 1, transition:{duration: 2}}}
-                >Keep on scrolling to continue with the slides...</Instruction>
+                >Continue with the slides...</Instruction>
                 </motion.div>
         </Component>
     )
