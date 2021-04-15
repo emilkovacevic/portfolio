@@ -1,3 +1,4 @@
+import GithubIMG from './projects/Github/Github.JPG'
 import BombermanIMG from './projects/Bomberman/Image.JPG'
 import ResortIMG from './projects/Resort/ResortIMG.JPG'
 import FilmsImg from './projects/Films/Cover.JPG'
@@ -68,7 +69,7 @@ export const personal = {
                     paragraph: 'Expanding on how doing good business. Learning about marketing and branding strategies I find really interesting.',
                     image:{
                         src: `${Business}`,
-                        alt: '',
+                        alt: 'business',
                     },
                 }
             ]
@@ -79,6 +80,17 @@ export const personal = {
 
 export const projects = [
     {
+        index: 0,
+        name:'Github Jobs',
+        gitLink:'https://github.com/emilkovacevic/github-jobs-react-app',
+        LiveLink:'https://github-jobs-website.web.app/',
+        tech: 'github jobs api, javascript, react, react-router-dom, axios, styled-components, firebase',
+        image:{
+            link:`${GithubIMG}`,
+            alt: 'Github jobs'    
+        }
+    },
+    {
         index: 1,
         name:'Portfolio',
         gitLink:'https://github.com/emilkovacevic/portfolio',
@@ -86,7 +98,7 @@ export const projects = [
         tech: 'javascript, react, react-router-dom, framer-motion, styled-components, firebase',
         image:{
             link:`${PortfolioIMG}`,
-            alt: 'Porfolio image'    
+            alt: 'Porfolio'    
         }
     },
     {
@@ -97,7 +109,7 @@ export const projects = [
         tech: 'javaScript, json, css, html',
         image:{
             link:`${FilmsImg}`,
-            alt: 'FilmsSite image'    
+            alt: 'Films website'    
         }
     },
     {
@@ -108,7 +120,7 @@ export const projects = [
         tech: 'javaScript, css',
         image:{
             link:`${BombermanIMG}`,
-            alt: 'Bomberman image'    
+            alt: 'Bomberman'    
         }
     },
     {
@@ -119,7 +131,7 @@ export const projects = [
         tech: 'javaScript, bootstrap, css, html',
         image:{
             link:`${ResortIMG}`,
-            alt: 'Resorts image'    
+            alt: 'Resorts'    
         }
     }
 ]
