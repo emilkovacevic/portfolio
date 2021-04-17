@@ -8,6 +8,7 @@ import ContactForm from '../../components/contact/ContactForm'
 
 const Component = styled.div`   
   margin-top:2em;
+  margin-bottom:5em;
   min-height:100vh;
   display: flex;
   flex-direction: column;
