@@ -7,12 +7,11 @@ import { personal } from '../../data/data'
 import ContactForm from '../../components/contact/ContactForm'
 
 const Component = styled.div`   
-  margin-top:2em;
   min-height:100vh;
-  padding-bottom: 300px;
+  margin:1em 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   button{
       font-size:2rem;
@@ -71,15 +70,10 @@ const Component = styled.div`
     display:block;
     position:relative;
     padding-bottom:2em;
-    padding-top:100px;
     display:flex;
     align-items:center;
     i{
         font-size:0.8rem;
-    }
-    @media (max-height: 800px){
-        top:50px;
-        overflow:scroll;
     }
 }
 `;
