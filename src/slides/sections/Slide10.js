@@ -8,8 +8,8 @@ import ContactForm from '../../components/contact/ContactForm'
 
 const Component = styled.div`   
   margin-top:2em;
-  margin-bottom:5em;
   min-height:100vh;
+  padding-bottom: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ const Component = styled.div`
     margin: 0.5em 1em ;
     a{
         color:var(--links);
-        :hover, focus{
+        :hover, .focus{
             color: var(--heading);
         }
     }

@@ -18,10 +18,9 @@ const SliderWrapper = styled.div`
 background: var(--background);
 background-size: 100vw 100vh;
 min-height:80vh;
-overflow:hidden !important;
 `
 const CenteringComponent = styled.div`
-height:100vh;
+min-height:100vh;
 max-width:1200px;
 margin:auto;
 display:flex;
@@ -34,8 +33,6 @@ const SliderBtns = styled.div`
         margin:0 auto;
         visibility: visible;
         display:flex;
-        position:fixed;
-        bottom:0;
         width:100%;
         justify-content:space-between;
         @media(min-width: 1200px){

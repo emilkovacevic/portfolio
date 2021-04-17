@@ -4,12 +4,7 @@ import {motion} from 'framer-motion'
 import {projects} from '../../data/data'
 
 const Component = styled.div`
-padding: 15% 0 10em 0;
-@media(max-width:1280px){
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 100px 0;
-}
+overflow:hidden;
 `;
 
 const Heading = styled(motion.p)`
