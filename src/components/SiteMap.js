@@ -5,11 +5,9 @@ import {Link} from 'react-router-dom'
 
 const Map = styled.div`
 position: absolute;
-left: 0;
 display: flex;
 flex-wrap: wrap;
-position: absolute;
-z-index: 99;
+z-index: 999;
 `
 const ToggleButton = styled.div`
 z-index: 99;

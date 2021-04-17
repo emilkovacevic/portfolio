@@ -16,7 +16,7 @@ const FormComponent = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  overflow-Y:scroll;
+
   z-index:999;
   padding: 0.5em;
   text-align:left;
@@ -29,6 +29,9 @@ const FormComponent = styled.div`
   }
   h5{
     text-transform:uppercase;
+  }
+  p{
+    text-align:center;
   }
   input, textarea{
     border:none;
@@ -69,7 +72,6 @@ const Container = styled.div`
     height:100%;
     position: absolute;
     width: 100%;
-    height: 100vh;
     top: 0;
     left: 0;
     bottom:0;
@@ -87,13 +89,13 @@ const Header = styled.div`
 `;
 
 const Main = styled.div`
-  margin: 0 1em;
+  margin: 0 auto;
   padding: 1em 0;
   .required{
     color:red;
   }
   h5 {
-    margin: 1em 0;
+    margin: 1em auto;
   }
   label {
     margin-top: 1em;

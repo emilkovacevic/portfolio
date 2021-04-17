@@ -17,14 +17,13 @@ import Slide10 from './sections/Slide10'
 const SliderWrapper = styled.div`
 background: var(--background);
 background-size: 100vw 100vh;
-min-height:100vh;
+min-height:80vh;
 overflow:hidden !important;
 `
 const CenteringComponent = styled.div`
 height:100vh;
 max-width:1200px;
 margin:auto;
-paddign-top:15%;
 display:flex;
 flex-direction:column;
 justify-content: center;
@@ -32,25 +31,27 @@ align-items: center;
 text-align:center;
 `
 const SliderBtns = styled.div`
-max-width:1280px;
-margin:0 auto;
+        margin:0 auto;
         visibility: visible;
         display:flex;
         position:fixed;
         bottom:0;
         width:100%;
         justify-content:space-between;
+        @media(min-width: 1200px){
+            max-width:1200px;
+        }
 `
 const SliderBtn = styled(motion.div)`
     button{
         border:none;
         background:inherit;
         outline: none;
-        margin:10px 20px;;
+        margin:10px 1rem;
         padding: 10px;
         cursor:pointer;        
         font-size:2.5rem;
-        media(max-width: 960px){
+        @media(max-width: 960px){
             font-size:1.8rem;
         }
     }
@@ -83,12 +84,12 @@ const SlideControler = () => {
         const keyHandler = (e) => {
             const key = e.keyCode
             switch (key) {
-                case 38:
+                case 38 || 39:
                     if (section > 1) {
                         setSection(section - 1)
                     }
                     break;
-                case 40:
+                case 37 || 40:
                     if (section < 10) {
                         setSection(section + 1)
                     }

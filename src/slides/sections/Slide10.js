@@ -6,13 +6,8 @@ import ErrorFlash from './helpers/ErrorFlash';
 import { personal } from '../../data/data'
 import ContactForm from '../../components/contact/ContactForm'
 
-const Component = styled.div`
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  height:100vh;
+const Component = styled.div`   
+  margin-top:2em;
   min-height:100vh;
   display: flex;
   flex-direction: column;
@@ -84,7 +79,6 @@ const Component = styled.div`
     @media (max-height: 800px){
         top:50px;
         overflow:scroll;
-        position:absolute;
     }
 }
 `;

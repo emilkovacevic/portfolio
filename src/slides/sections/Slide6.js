@@ -12,12 +12,10 @@ const Component = styled.div`
     max-width: var(--app-max-width);
     margin:0 auto;
     display:block;
-    position:absolute;
+    position:relative;
     left:0;
     right:0;
-    top:15%;
     bottom:0;
-    min-height:100vh;
     p{
         margin:0.5em;
     }
@@ -36,7 +34,6 @@ const Component = styled.div`
     }
     
     @media (max-width: 600px){
-    top:110px;
     padding-bottom:20px;
     }
     @media (max-width: 400px){

@@ -12,16 +12,16 @@ body {
 /* HOT FIX!! NAV TRANSITION ON resize */
 .navbar{
   background-color: var(--background);
-  border-bottom: 1px solid var(--text);
-  position:fixed;
-  top: 0;
+  position:static;
   z-index: 995;
   width: 100%;
 }
 .nav-btn__colors{
-  background: #def2f1 !important;
+  background-color: var(--background);
   box-shadow: 0px 2px 3px var(--text);
   padding-bottom: 1em;
+  position: sticky;
+  top: 0;
 }
 .nav-btn__colors i{
   color:24343a !important;

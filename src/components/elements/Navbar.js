@@ -8,7 +8,6 @@ const Nav = styled.nav`
   left: 0;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
   z-index: 99;
 `;
 const ToggleButton = styled.div`
@@ -118,8 +117,7 @@ const Name = styled.div`
    @media (max-width: 680px) {
     margin-top:2em;
    }
-}
-`;
+`
 const Description = styled.span`
   margin: 3em;
   position: relative;

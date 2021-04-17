@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { projects } from "../../data/data";
 
-
 const Component = styled.section`
 position: static;
 box-sizing:border-box;
@@ -16,6 +15,7 @@ min-height:100vh;
 const Container = styled(motion.div)`
   position: static;
   display:flex;
+  flex-wrap:wrap;
   flex-direction:column;
   justify-content:center;
   max-width:1200px;
@@ -32,8 +32,14 @@ const Container = styled(motion.div)`
 
 const Cards = styled.div`
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns:1fr 1fr 1fr;
   grid-gap: 1em;
+  @media (max-width: 1020px){
+    grid-template-columns:1fr 1fr;
+  }
+  @media (max-width:620px){
+    grid-template-columns:1fr;
+  }
 `
 const Card = styled(motion.div)`
   background: var(--card-links__border);

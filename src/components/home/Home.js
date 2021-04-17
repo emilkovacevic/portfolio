@@ -2,15 +2,12 @@ import React from "react";
 import styled, {keyframes} from "styled-components";
 
 const HomePage = styled.div`
-  background: var(--background);
-  position:relative;
-  z-index:0;
   color: var(--text);
   display: flex;
   flex-wrap:wrap;
+  height:80vh;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   overflow:hidden;
 `;
 
